@@ -3,7 +3,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
-  title: 'Honest Korean Reviews — Real Reviews by Min & Sarah',
+  title: 'Honest Korean Reviews — Real Reviews by Min & Seo',
   description: 'A Korean couple taste-tests and reviews Korean products from a foreigner\'s perspective — snacks, drinks, ramen, K-beauty, and more. Brutally honest scores from 0 to 10.',
   keywords: 'Korean products, Korean snacks review, K-beauty review, Korean food, Korea travel, honest reviews',
   openGraph: {

@@ -2,7 +2,7 @@ import styles from './page.module.css';
 
 export const metadata = {
   title: 'About Us — Honest Korean Reviews',
-  description: 'Meet Min & Sarah, the Korean couple behind Honest Korean Reviews.',
+  description: 'Meet Min & Seo, the Korean couple behind Honest Korean Reviews.',
 };
 
 export default function AboutPage() {
@@ -19,7 +19,7 @@ export default function AboutPage() {
         <div className="container-narrow">
           <div className={styles.block}>
             <h2 className={styles.heading}>Who We Are</h2>
-            <p>We&apos;re Min and Sarah — a Korean couple living in Seoul who decided to look at Korean products through fresh eyes. Min grew up in Busan eating every snack the convenience store had to offer. Sarah moved to Korea from the US five years ago and has been on a non-stop tasting journey ever since.</p>
+            <p>We&apos;re Min and Seo — a Korean couple living in Seoul who decided to look at Korean products through fresh eyes. Min grew up in Busan eating every snack the convenience store had to offer. Seo moved to Korea from the US five years ago and has been on a non-stop tasting journey ever since.</p>
             <p>Together, we buy, taste, test, and score Korean products on a scale of 0 to 10. No exceptions, no sacred cows. If it&apos;s bad, we say it&apos;s bad. If it&apos;s life-changing, we&apos;ll make sure you know.</p>
             <p>We started this site because we noticed a gap: millions of foreigners are curious about Korean products thanks to K-dramas, K-pop, and Korean food trends — but there&apos;s no reliable, honest, English-language resource to help them navigate what&apos;s actually good versus what&apos;s just marketing.</p>
           </div>
@@ -52,7 +52,7 @@ export default function AboutPage() {
                 <span className={styles.ruleNum}>04</span>
                 <div>
                   <h3>We disagree — publicly</h3>
-                  <p>Min and Sarah often give different scores. That&apos;s the point. Two perspectives are more honest than one forced consensus.</p>
+                  <p>Min and Seo often give different scores. That&apos;s the point. Two perspectives are more honest than one forced consensus.</p>
                 </div>
               </div>
             </div>

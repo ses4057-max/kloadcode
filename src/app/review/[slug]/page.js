@@ -80,7 +80,7 @@ export default async function ReviewPage({ params }) {
                 <ScoreBadge score={review.minScore} size="sm" />
               </div>
               <div className={styles.personScore}>
-                <span className={styles.personName}>Sarah&apos;s Score</span>
+                <span className={styles.personName}>Seo&apos;s Score</span>
                 <ScoreBadge score={review.sarahScore} size="sm" />
               </div>
             </div>
@@ -118,7 +118,7 @@ export default async function ReviewPage({ params }) {
         </div>
       </section>
 
-      {/* Min & Sarah Takes */}
+      {/* Min & Seo Takes */}
       <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
         <div className="container-narrow">
           <div className={styles.takes}>
@@ -136,7 +136,7 @@ export default async function ReviewPage({ params }) {
               <div className={styles.takeHeader}>
                 <span className={styles.takeAvatar}>👩</span>
                 <div>
-                  <h3 className={styles.takeName}>Sarah&apos;s Take</h3>
+                  <h3 className={styles.takeName}>Seo&apos;s Take</h3>
                   <ScoreBadge score={review.sarahScore} size="sm" />
                 </div>
               </div>
