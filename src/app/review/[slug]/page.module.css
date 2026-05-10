@@ -1,0 +1,300 @@
+.page { }
+
+/* Hero */
+.hero {
+  padding: var(--space-3xl) 0;
+  background: var(--bg-white);
+}
+
+.heroInner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3xl);
+  align-items: center;
+}
+
+.heroImage {
+  border-radius: var(--border-radius-lg);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.heroImg {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.heroInfo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.brand {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--text-muted);
+  font-weight: 600;
+}
+
+.title {
+  font-size: 2.4rem;
+  line-height: 1.15;
+}
+
+.titleKo {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-top: -0.5rem;
+}
+
+.verdict {
+  font-size: 1.15rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.dualScores {
+  display: flex;
+  gap: var(--space-lg);
+  margin-top: var(--space-sm);
+}
+
+.personScore {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.personName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.price {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  padding: var(--space-sm) var(--space-md);
+  background: var(--bg-primary);
+  border-radius: var(--border-radius-sm);
+  display: inline-block;
+}
+
+/* Section */
+.section {
+  padding: var(--space-3xl) 0;
+}
+
+.sectionTitle {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  margin-bottom: var(--space-xl);
+}
+
+/* Sub Scores */
+.subScores {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.subScore {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-sm);
+  align-items: center;
+}
+
+.subScoreHeader {
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+}
+
+.subScoreLabel {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.subScoreWeight {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.subScoreTrack {
+  height: 8px;
+  background: var(--border-light);
+  border-radius: 100px;
+  overflow: hidden;
+}
+
+.subScoreFill {
+  height: 100%;
+  border-radius: 100px;
+  transition: width 1s ease;
+}
+
+.subScoreVal {
+  font-family: var(--font-score);
+  font-size: 1.3rem;
+  min-width: 40px;
+  text-align: right;
+}
+
+/* Review Body */
+.reviewBody {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  color: var(--text-primary);
+}
+
+.reviewBody p {
+  margin-bottom: var(--space-lg);
+}
+
+/* Takes */
+.takes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-xl);
+}
+
+.takeBox {
+  padding: var(--space-xl);
+  background: var(--bg-primary);
+  border-radius: var(--border-radius-lg);
+  border-left: 4px solid var(--accent);
+}
+
+.takeHeader {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  margin-bottom: var(--space-md);
+}
+
+.takeAvatar {
+  font-size: 2rem;
+}
+
+.takeName {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-xs);
+}
+
+.takeText {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
+/* Where to Buy */
+.stores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.storeChip {
+  padding: 0.5rem 1rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.affiliate {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.affiliate small {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+/* Country */
+.countryGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+}
+
+.countryCard {
+  padding: var(--space-md) var(--space-lg);
+  background: var(--bg-white);
+  border: 1px solid var(--border);
+  border-radius: var(--border-radius);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 100px;
+}
+
+.countryName {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.countryScore {
+  font-family: var(--font-score);
+  font-size: 1.5rem;
+  color: var(--text-primary);
+}
+
+/* Similar */
+.similarGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 1.8rem;
+  }
+
+  .takes {
+    grid-template-columns: 1fr;
+  }
+
+  .similarGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .similarGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .dualScores {
+    flex-direction: column;
+    gap: var(--space-sm);
+  }
+}

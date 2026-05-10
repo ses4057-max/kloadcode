@@ -1,0 +1,79 @@
+.wrapper {}
+
+.form {
+  display: flex;
+  gap: var(--space-sm);
+  max-width: 440px;
+}
+
+.input {
+  flex: 1;
+  padding: 0.8rem 1.2rem;
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius);
+  font-size: 0.95rem;
+  background: var(--bg-white);
+  color: var(--text-primary);
+  transition: border-color var(--transition-fast);
+}
+
+.input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.input::placeholder {
+  color: var(--text-muted);
+}
+
+.button {
+  padding: 0.8rem 1.5rem;
+  background: var(--accent);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  border-radius: var(--border-radius);
+  border: none;
+  cursor: pointer;
+  transition: all var(--transition-base);
+  white-space: nowrap;
+}
+
+.button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.success {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  padding: var(--space-lg);
+  background: #E8F5E9;
+  border-radius: var(--border-radius);
+}
+
+.successIcon {
+  font-size: 1.5rem;
+}
+
+.successText {
+  font-weight: 500;
+  color: #2E7D32;
+}
+
+.dark .input {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.2);
+  color: white;
+}
+
+.dark .input::placeholder {
+  color: rgba(255,255,255,0.4);
+}
+
+@media (max-width: 480px) {
+  .form {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,8 @@
+[
+  { "slug": "drinks", "name": "Drinks", "nameKo": "음료", "icon": "🥤", "description": "From banana milk to barley tea — Korea's drink game is unmatched.", "color": "#4ECDC4" },
+  { "slug": "snacks", "name": "Snacks", "nameKo": "과자", "icon": "🍪", "description": "Sweet, savory, and everything in between. Korean snacks are a world of their own.", "color": "#FF6B6B" },
+  { "slug": "ramen", "name": "Ramen & Instant", "nameKo": "라면/즉석", "icon": "🍜", "description": "The instant noodle capital of the world. We've tried them all.", "color": "#F5A623" },
+  { "slug": "kbeauty", "name": "K-Beauty", "nameKo": "K-뷰티", "icon": "✨", "description": "Skincare, makeup, and the secrets behind that glass skin glow.", "color": "#BD10E0" },
+  { "slug": "convenience", "name": "Convenience Store New", "nameKo": "편의점 신상", "icon": "🏪", "description": "New releases from CU, GS25, and more — the frontline of Korean innovation.", "color": "#7B68EE" },
+  { "slug": "kpop", "name": "K-Pop & K-Drama", "nameKo": "K-POP/K-드라마", "icon": "🎵", "description": "Official merch, idol-endorsed products, and drama PPL items — reviewed honestly.", "color": "#FF69B4" }
+]

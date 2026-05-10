@@ -1,0 +1,64 @@
+.badge {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 2px;
+  background: var(--badge-color);
+  color: white;
+  border-radius: var(--border-radius);
+  font-family: var(--font-score);
+  line-height: 1;
+  letter-spacing: 0.02em;
+  box-shadow: 0 2px 8px color-mix(in srgb, var(--badge-color) 40%, transparent);
+}
+
+.sm {
+  padding: 4px 10px;
+}
+
+.sm .score {
+  font-size: 1.3rem;
+}
+
+.sm .outOf {
+  font-size: 0.7rem;
+  opacity: 0.8;
+}
+
+.md {
+  padding: 6px 14px;
+}
+
+.md .score {
+  font-size: 1.8rem;
+}
+
+.md .outOf {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+.lg {
+  padding: 10px 20px;
+}
+
+.lg .score {
+  font-size: 3rem;
+}
+
+.lg .outOf {
+  font-size: 1.1rem;
+  opacity: 0.8;
+}
+
+.xl {
+  padding: 14px 28px;
+}
+
+.xl .score {
+  font-size: 4.5rem;
+}
+
+.xl .outOf {
+  font-size: 1.4rem;
+  opacity: 0.8;
+}
