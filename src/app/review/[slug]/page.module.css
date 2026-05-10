@@ -34,12 +34,43 @@
   gap: var(--space-md);
 }
 
+.heroTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+}
+
 .brand {
   font-size: 0.8rem;
   text-transform: uppercase;
   letter-spacing: 0.12em;
   color: var(--text-muted);
   font-weight: 600;
+}
+
+.reviewTypeBadge {
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 0.25rem 0.7rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border);
+  border-radius: 100px;
+  color: var(--text-secondary);
+}
+
+.scoreRow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.firstTasted {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+  margin-top: -0.25rem;
 }
 
 .title {
@@ -204,6 +235,87 @@
   gap: var(--space-sm);
 }
 
+/* Korean Memory */
+.memoryBox {
+  display: flex;
+  gap: var(--space-lg);
+  background: #FFF8F0;
+  border: 1px solid #F5A62344;
+  border-left: 4px solid #F5A623;
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-xl);
+}
+
+.memoryIcon { font-size: 2rem; flex-shrink: 0; }
+
+.memoryTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-sm);
+  color: var(--text-primary);
+}
+
+.memoryText {
+  font-size: 1.05rem;
+  line-height: 1.8;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+/* Try Advice */
+.tryAdvice {
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* How to Spot */
+.spotGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-lg);
+}
+
+.spotItem {
+  display: flex;
+  gap: var(--space-md);
+  align-items: flex-start;
+}
+
+.spotIcon { font-size: 1.4rem; flex-shrink: 0; }
+
+.spotItem strong { display: block; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); margin-bottom: 0.2rem; }
+.spotItem p { font-size: 0.95rem; color: var(--text-primary); line-height: 1.5; margin: 0; }
+
+/* Buy Section */
+.buySubtitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-bottom: var(--space-md);
+}
+
+.affiliateCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+}
+
+.affiliateCard {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: 0.5rem 1rem;
+  border: 1px dashed var(--border);
+  border-radius: var(--border-radius-sm);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.affiliateTag {
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
 /* Where to Buy */
 .stores {
   display: flex;
@@ -270,31 +382,21 @@
   gap: var(--space-lg);
 }
 
+@media (max-width: 900px) {
+  .spotGrid { grid-template-columns: repeat(2, 1fr); }
+}
+
 @media (max-width: 768px) {
-  .heroInner {
-    grid-template-columns: 1fr;
-  }
-
-  .title {
-    font-size: 1.8rem;
-  }
-
-  .takes {
-    grid-template-columns: 1fr;
-  }
-
-  .similarGrid {
-    grid-template-columns: repeat(2, 1fr);
-  }
+  .heroInner { grid-template-columns: 1fr; }
+  .title { font-size: 1.8rem; }
+  .takes { grid-template-columns: 1fr; }
+  .similarGrid { grid-template-columns: repeat(2, 1fr); }
+  .memoryBox { flex-direction: column; gap: var(--space-md); }
 }
 
 @media (max-width: 480px) {
-  .similarGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .dualScores {
-    flex-direction: column;
-    gap: var(--space-sm);
-  }
+  .similarGrid { grid-template-columns: 1fr; }
+  .dualScores { flex-direction: column; gap: var(--space-sm); }
+  .spotGrid { grid-template-columns: 1fr; }
+  .scoreRow { flex-direction: column; align-items: flex-start; }
 }

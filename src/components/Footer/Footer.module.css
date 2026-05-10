@@ -72,6 +72,17 @@
   margin-bottom: var(--space-xs);
 }
 
+.affiliateBar {
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.4);
+  line-height: 1.6;
+}
+
+.affiliateBar a { color: rgba(255,255,255,0.6); text-decoration: underline; }
+.affiliateBar a:hover { color: #fff; }
+
 .bottom {
   padding-top: var(--space-xl);
   display: flex;

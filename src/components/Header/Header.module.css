@@ -89,6 +89,21 @@
   gap: var(--space-md);
 }
 
+.findBtn {
+  padding: 0.45rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  border: 1.5px solid var(--border);
+  border-radius: 100px;
+  transition: all var(--transition-fast);
+}
+
+.findBtn:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
 .subscribe {
   padding: 0.5rem 1.25rem;
   background: var(--accent);

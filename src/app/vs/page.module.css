@@ -1,0 +1,27 @@
+.page {}
+.hero { background: var(--bg-dark); padding: var(--space-4xl) 0; color: var(--text-inverse); }
+.title { font-size: 2.4rem; color: #fff; margin-bottom: var(--space-md); }
+.subtitle { font-size: 1.1rem; color: rgba(250,247,242,0.7); line-height: 1.6; }
+.section { padding: var(--space-4xl) 0; }
+.sectionTitle { font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: var(--space-2xl); }
+
+.differentiators { display: flex; flex-direction: column; gap: var(--space-xl); }
+.differentiator { display: flex; gap: var(--space-lg); align-items: flex-start; }
+.diffIcon { font-size: 1.8rem; flex-shrink: 0; width: 2.5rem; text-align: center; }
+.diffTitle { display: block; font-weight: 700; font-size: 1rem; margin-bottom: var(--space-xs); }
+.diffBody { font-size: 0.95rem; color: var(--text-secondary); line-height: 1.7; margin: 0; }
+
+.comparisons { display: flex; flex-direction: column; gap: var(--space-xl); }
+.comparison { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-lg); }
+.them { background: #FFF5F5; border-radius: var(--border-radius-lg); padding: var(--space-xl); border-left: 4px solid #E85D4E; }
+.us   { background: #F0FFF4; border-radius: var(--border-radius-lg); padding: var(--space-xl); border-left: 4px solid #4CAF50; }
+.compLabel { display: block; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.08em; color: var(--text-muted); margin-bottom: var(--space-sm); }
+.them strong, .us strong { display: block; font-size: 0.95rem; margin-bottom: var(--space-sm); }
+.them p, .us p { font-size: 0.92rem; color: var(--text-secondary); line-height: 1.7; margin: 0; }
+
+.cta { padding: var(--space-4xl) 0; background: var(--bg-primary); text-align: center; }
+.ctaTitle { font-family: var(--font-heading); font-size: 2rem; margin-bottom: var(--space-md); }
+.cta p { color: var(--text-secondary); margin-bottom: var(--space-xl); font-size: 1.05rem; }
+.ctaBtns { display: flex; justify-content: center; gap: var(--space-md); flex-wrap: wrap; }
+
+@media (max-width: 768px) { .comparison { grid-template-columns: 1fr; } .title { font-size: 1.8rem; } }

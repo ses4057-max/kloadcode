@@ -23,7 +23,26 @@
     "date": "2026-05-01",
     "halalFriendly": false,
     "vegan": false,
-    "glutenFree": true
+    "glutenFree": true,
+    "jeong_score": 10,
+    "review_type": "childhood",
+    "first_tasted_age": "Min: age 4, Seo: age 7",
+    "korean_memory": "Every Korean kid in the 90s held this little clay-pot-shaped bottle with both tiny hands after coming out of a public bath, while their mom dried their hair with a hot air gun. It wasn't just a drink — it was the reward for surviving the scrubbing.",
+    "aliases": {
+      "korean_official": "빙그레 바나나우유",
+      "korean_nicknames": ["단지우유", "바나나맛우유", "바나나밀크"],
+      "romanization": ["Binggrae Banana Milk", "Bingrae Banana Mat Wooyu", "Banana Mat Oo Yoo"],
+      "english_descriptors": ["yellow drink in pot bottle", "banana milk korea", "clay pot milk", "bath house drink", "korean banana milk jar"],
+      "common_typos": ["bingrae", "bingrea", "banana woo yu", "bananamat"]
+    },
+    "how_to_spot": {
+      "color": "Bright yellow with white label",
+      "shape": "Round pot / jar shape (단지 모양)",
+      "size": "240ml small bottle",
+      "store_location": "Milk fridge, near other dairy drinks",
+      "price_range": "₩1,400 — ₩1,600",
+      "distinctive_feature": "Clay-pot silhouette printed on label; unmistakable yellow color"
+    }
   },
   {
     "id": 2,
@@ -49,7 +68,26 @@
     "date": "2026-05-02",
     "halalFriendly": false,
     "vegan": false,
-    "glutenFree": true
+    "glutenFree": true,
+    "jeong_score": 8,
+    "review_type": "childhood",
+    "first_tasted_age": "Min: age 5, Seo: age 6",
+    "korean_memory": "This was the carton you got from the school cafeteria milk program — handed out in those small triangular cartons on cold winter mornings. You'd warm your hands around it before drinking. It tasted better when your hands were cold.",
+    "aliases": {
+      "korean_official": "매일 초코우유",
+      "korean_nicknames": ["초코우유", "매일유업 초코"],
+      "romanization": ["Maeil Chocolate Milk", "Maeil Choko Wooyu", "Maeil Dairy Choco"],
+      "english_descriptors": ["korean chocolate milk carton", "light chocolate milk", "school chocolate milk korea"],
+      "common_typos": ["maiel", "mael", "choco woo yu"]
+    },
+    "how_to_spot": {
+      "color": "Brown and white carton with chocolate swirl design",
+      "shape": "Standard small rectangular milk carton",
+      "size": "200ml or 250ml carton",
+      "store_location": "Milk fridge, near other dairy cartons",
+      "price_range": "₩1,200 — ₩1,400",
+      "distinctive_feature": "Maeil (매일) brand logo prominently displayed; chocolate brown color scheme"
+    }
   },
   {
     "id": 3,
@@ -75,7 +113,26 @@
     "date": "2026-04-28",
     "halalFriendly": true,
     "vegan": false,
-    "glutenFree": false
+    "glutenFree": false,
+    "jeong_score": 7,
+    "review_type": "tasted",
+    "first_tasted_age": "Min: age 24 (2014 launch), Seo: age 22",
+    "korean_memory": "In 2014, Korea lost its mind over this chip. Office workers were asking colleagues to queue at multiple convenience stores. There were online 'honey butter chip bounties.' Min's mom called to ask if he could find her a bag. It was the snack that defined an era — even if it launched when we were already adults.",
+    "aliases": {
+      "korean_official": "허니버터칩",
+      "korean_nicknames": ["허버칩", "꿀버터칩"],
+      "romanization": ["Honey Butter Chip", "Heoni Beoteo Chip", "Haitai Honey Butter"],
+      "english_descriptors": ["korean honey butter chips", "sweet salty chips korea", "yellow chip bag korea", "ridged potato chips honey"],
+      "common_typos": ["honey butter crisps", "honi butter", "honey batter chip"]
+    },
+    "how_to_spot": {
+      "color": "Yellow and white bag with honey comb pattern",
+      "shape": "Standard large chip bag",
+      "size": "60g regular bag",
+      "store_location": "Snack aisle, usually near front of store",
+      "price_range": "₩1,800 — ₩2,200",
+      "distinctive_feature": "Bold 허니버터칩 text; yellow honeycomb design on packaging"
+    }
   },
   {
     "id": 4,
@@ -101,7 +158,26 @@
     "date": "2026-04-25",
     "halalFriendly": false,
     "vegan": false,
-    "glutenFree": false
+    "glutenFree": false,
+    "jeong_score": 5,
+    "review_type": "tasted",
+    "first_tasted_age": "Min: age 20, Seo: age 19",
+    "korean_memory": "Buldak is not nostalgia — it's a phenomenon. The original launched in 2012 as the 'spiciest ramen in Korea.' The 2x version followed and became YouTube bait worldwide. We grew up eating Korean spicy food, but even we respect this one. It's not a childhood memory. It's a modern rite of passage.",
+    "aliases": {
+      "korean_official": "불닭볶음면 2배 매운맛",
+      "korean_nicknames": ["불닭", "핵불닭", "2x 불닭"],
+      "romanization": ["Buldak Bokkeummyun 2x", "Fire Noodle 2x", "Samyang 2x Spicy"],
+      "english_descriptors": ["spicy fire noodle korea", "korean challenge ramen", "2x spicy noodle", "black package ramen korea", "youtube challenge ramen"],
+      "common_typos": ["bulgak", "buldok", "fire noddle", "samyang spicy"]
+    },
+    "how_to_spot": {
+      "color": "Black packaging with fire/flame graphics",
+      "shape": "Standard ramen packet",
+      "size": "140g",
+      "store_location": "Ramen aisle; often displayed at front near register",
+      "price_range": "₩1,600 — ₩2,000",
+      "distinctive_feature": "Black bag with red fire chicken (불닭) graphic; '2X' clearly printed"
+    }
   },
   {
     "id": 5,
@@ -127,7 +203,26 @@
     "date": "2026-04-30",
     "halalFriendly": true,
     "vegan": false,
-    "glutenFree": false
+    "glutenFree": false,
+    "jeong_score": 9,
+    "review_type": "childhood",
+    "first_tasted_age": "Min: age 5, Seo: age 6",
+    "korean_memory": "Every Korean school trip had a Choco Pie moment. You'd be on the bus, teacher distracted, and someone would pull out a box from their backpack. It went around the whole row. The foil wrapper crinkle was the sound of shared happiness. The taste was secondary — the ritual was the point.",
+    "aliases": {
+      "korean_official": "초코파이",
+      "korean_nicknames": ["오리온 초코파이", "초파"],
+      "romanization": ["Choco Pie", "Choco-Pie", "Orion Choco Pie", "Chocopai"],
+      "english_descriptors": ["korean chocolate cake", "chocolate marshmallow sandwich korea", "foil wrapped cake korea", "korean moon pie"],
+      "common_typos": ["chocopie", "choco-pie", "chocolat pie"]
+    },
+    "how_to_spot": {
+      "color": "Red and brown box; individually silver foil wrapped",
+      "shape": "Round flat cake sandwich, individually wrapped in foil",
+      "size": "Box of 12 individual pieces",
+      "store_location": "Snack aisle or near checkout; sometimes at dedicated display",
+      "price_range": "₩4,000 — ₩5,000 per box",
+      "distinctive_feature": "Orion brand logo on red box; silver foil individual wrappers with 초코파이 printed"
+    }
   },
   {
     "id": 6,
@@ -153,7 +248,26 @@
     "date": "2026-04-20",
     "halalFriendly": false,
     "vegan": false,
-    "glutenFree": false
+    "glutenFree": false,
+    "jeong_score": 9,
+    "review_type": "childhood",
+    "first_tasted_age": "Min: age 7, Seo: age 8",
+    "korean_memory": "Late at night, after studying, the smell of Shin Ramyun cooking on the stove was the smell of being Korean. Every college student had a stack in the dorm. Every late-working parent made it for themselves at 11pm. It's not just ramen — it's the taste of pushing through something hard.",
+    "aliases": {
+      "korean_official": "신라면",
+      "korean_nicknames": ["신라", "농심 신라면"],
+      "romanization": ["Shin Ramyun", "Shin Ramen", "Nongshim Shin Ramyun", "Sin Ramyeon"],
+      "english_descriptors": ["korean spicy ramen", "red packet ramen", "most popular korean ramen", "nongshim spicy noodles", "classic korean instant noodle"],
+      "common_typos": ["shin ramun", "shin ramen noodles", "shinramen", "nongshim spicy"]
+    },
+    "how_to_spot": {
+      "color": "Red packet with gold lettering",
+      "shape": "Standard rectangular ramen packet",
+      "size": "120g single serving",
+      "store_location": "Ramen aisle, usually takes up an entire shelf section",
+      "price_range": "₩1,100 — ₩1,400",
+      "distinctive_feature": "Bold red 신라면 text; Nongshim logo; sold everywhere including abroad"
+    }
   },
   {
     "id": 7,
@@ -179,7 +293,25 @@
     "date": "2026-05-05",
     "halalFriendly": false,
     "vegan": false,
-    "glutenFree": true
+    "glutenFree": true,
+    "jeong_score": 1,
+    "review_type": "tasted",
+    "korean_memory": "No childhood memory here — this launched in 2025. It's the kind of product Korean convenience stores churn out weekly. Most disappear within a month. This one deserved to.",
+    "aliases": {
+      "korean_official": "CU 헤이루 티라미수 라떼",
+      "korean_nicknames": ["헤이루 티라미수", "CU 티라미수"],
+      "romanization": ["CU Heyroo Tiramisu Latte", "CU Hey Roo Tiramisu", "CU Tiramisu Coffee"],
+      "english_descriptors": ["CU convenience store tiramisu drink", "korean tiramisu latte", "korean 7-eleven style tiramisu coffee", "plastic cup tiramisu"],
+      "common_typos": ["heyroo", "hay roo", "tiramisu coffee cu"]
+    },
+    "how_to_spot": {
+      "color": "White and brown cup with tiramisu illustration",
+      "shape": "Plastic RTD (ready-to-drink) cup with lid",
+      "size": "300ml cup",
+      "store_location": "Cold drink section of CU convenience stores",
+      "price_range": "₩2,300 — ₩2,700",
+      "distinctive_feature": "CU Heyroo (헤이루) branding; tiramisu layer illustration on packaging; only at CU"
+    }
   },
   {
     "id": 8,
@@ -205,7 +337,25 @@
     "date": "2026-04-15",
     "halalFriendly": true,
     "vegan": false,
-    "glutenFree": true
+    "glutenFree": true,
+    "jeong_score": 4,
+    "review_type": "tasted",
+    "korean_memory": "COSRX wasn't a household name until the global K-beauty wave made it one. Koreans knew it as a reliable derma brand, not an icon. The snail essence became famous abroad before it became famous at home — we started getting messages from foreign friends asking where to buy it. That's how we knew something special was happening.",
+    "aliases": {
+      "korean_official": "코스알엑스 스네일 뮤신 에센스",
+      "korean_nicknames": ["달팽이 에센스", "스네일 에센스", "코스알엑스 달팽이"],
+      "romanization": ["COSRX Snail Mucin Essence", "Cosrx Snail 96 Essence", "Cosrx Snail Secretion Filtrate"],
+      "english_descriptors": ["snail slime serum korea", "snail mucin essence", "korean glass skin serum", "transparent snail essence bottle", "K-beauty snail product"],
+      "common_typos": ["cosrex", "cosrx snail", "snail muccin", "cosrx mucin"]
+    },
+    "how_to_spot": {
+      "color": "Clear/transparent bottle with minimal white label",
+      "shape": "Tall pump bottle, 100ml",
+      "size": "100ml",
+      "store_location": "Olive Young essence/serum section",
+      "price_range": "₩15,000 — ₩18,000",
+      "distinctive_feature": "Clear bottle showing the amber-tinted essence; COSRX logo; '96%' prominently displayed"
+    }
   },
   {
     "id": 9,
@@ -231,7 +381,25 @@
     "date": "2026-04-18",
     "halalFriendly": true,
     "vegan": true,
-    "glutenFree": true
+    "glutenFree": true,
+    "jeong_score": 3,
+    "review_type": "tasted",
+    "korean_memory": "TIRTIR is new. It didn't exist in our childhood or even our early twenties. It went viral on TikTok before most Koreans had heard of it. That's the strange reality of K-beauty in 2024 — sometimes the world discovers a Korean brand before Korea does.",
+    "aliases": {
+      "korean_official": "티르티르 마스크핏 쿠션",
+      "korean_nicknames": ["티르티르 쿠션", "마스크핏 쿠션"],
+      "romanization": ["TIRTIR Mask Fit Cushion", "Tirtir Red Cushion", "TIRTIR Mask Fit Red Cushion"],
+      "english_descriptors": ["tiktok k-beauty cushion", "korean red cushion foundation", "tirtir 30 shades cushion", "viral korean cushion compact"],
+      "common_typos": ["tirtir", "tir tir", "mask fit cushon", "tirtir cushion"]
+    },
+    "how_to_spot": {
+      "color": "Bright red compact case",
+      "shape": "Round cushion compact with mirror",
+      "size": "Standard cushion compact",
+      "store_location": "Olive Young makeup section; often displayed near entrance",
+      "price_range": "₩23,000 — ₩27,000",
+      "distinctive_feature": "Unmistakable red compact; TIRTIR logo; sold with shade number on box"
+    }
   },
   {
     "id": 10,
@@ -257,6 +425,24 @@
     "date": "2026-05-03",
     "halalFriendly": true,
     "vegan": true,
-    "glutenFree": true
+    "glutenFree": true,
+    "jeong_score": 2,
+    "review_type": "tasted",
+    "korean_memory": "NewJeans debuted in 2022. This plush is from 2024. There's no generational memory here — this is brand new K-pop merchandise. The Jeong Score is low not because it's bad, but because Jeong takes decades to build. A plush this new simply hasn't had the time.",
+    "aliases": {
+      "korean_official": "뉴진스 포닝 앱 버니 인형",
+      "korean_nicknames": ["뉴진스 버니", "포닝 버니"],
+      "romanization": ["NewJeans Bunny Plush", "NewJeans Phoning Bunny", "Haerin Bunny Plush"],
+      "english_descriptors": ["newjeans kpop merchandise", "newjeans bunny stuffed animal", "korean idol plush toy", "haerin bunny doll"],
+      "common_typos": ["new jeans bunny", "newjean bunny", "phoning app doll"]
+    },
+    "how_to_spot": {
+      "color": "White/cream bunny with pastel accents",
+      "shape": "Small stuffed bunny plush",
+      "size": "Approximately 20cm tall",
+      "store_location": "K-pop merch shops; Duty Free; SM/HYBE official stores",
+      "price_range": "₩25,000 — ₩32,000",
+      "distinctive_feature": "NewJeans / Phoning branding tag; minimalist bunny face design; sold in branded packaging"
+    }
   }
 ]

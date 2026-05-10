@@ -1,0 +1,98 @@
+.wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.4rem 0.85rem;
+  border-radius: 100px;
+  color: #fff;
+  font-family: var(--font-body);
+  font-weight: 700;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.badge:hover {
+  opacity: 0.88;
+  transform: translateY(-1px);
+}
+
+.flag { font-size: 0.9em; }
+
+.label {
+  font-size: 1em;
+  letter-spacing: 0.02em;
+}
+
+.sublabel {
+  font-size: 0.7em;
+  font-weight: 500;
+  opacity: 0.85;
+  border-left: 1px solid rgba(255,255,255,0.4);
+  padding-left: 0.5rem;
+}
+
+/* Sizes */
+.sm .badge  { font-size: 0.78rem; padding: 0.25rem 0.6rem; }
+.md .badge  { font-size: 0.88rem; }
+.lg .badge  { font-size: 1.05rem; padding: 0.55rem 1.1rem; }
+.xl .badge  { font-size: 1.2rem;  padding: 0.7rem 1.4rem; }
+
+/* Tooltip */
+.tooltip {
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 300px;
+  background: var(--bg-dark);
+  color: var(--text-inverse);
+  border-radius: var(--border-radius);
+  padding: 1.2rem;
+  font-size: 0.85rem;
+  line-height: 1.6;
+  z-index: 100;
+  box-shadow: var(--shadow-xl);
+  animation: fadeIn 0.2s ease;
+}
+
+.tooltip p { margin-top: 0.75rem; }
+.tooltip p:first-of-type { margin-top: 0.5rem; }
+
+.tooltipTitle {
+  font-size: 0.95rem;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.tooltipLink {
+  display: inline-block;
+  margin-top: 0.75rem;
+  color: #F5A623;
+  font-weight: 600;
+  text-decoration: underline;
+}
+
+.close {
+  position: absolute;
+  top: 0.6rem;
+  right: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 480px) {
+  .tooltip { width: 260px; }
+}

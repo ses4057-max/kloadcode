@@ -116,6 +116,103 @@
   font-size: 0.95rem;
 }
 
+.featuredJeong {
+  margin-top: var(--space-sm);
+}
+
+/* Find Section */
+.findSection {
+  background: var(--bg-dark);
+  padding: var(--space-3xl) 0;
+}
+
+.findInner {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 0 var(--space-lg);
+  text-align: center;
+}
+
+.findTitle {
+  font-family: var(--font-heading);
+  font-size: 1.9rem;
+  color: var(--text-inverse);
+  margin-bottom: var(--space-sm);
+}
+
+.findSub {
+  color: rgba(250,247,242,0.65);
+  margin-bottom: var(--space-xl);
+  font-size: 1.05rem;
+}
+
+.findChips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.findChip {
+  padding: 0.3rem 0.9rem;
+  background: rgba(255,255,255,0.1);
+  border: 1px solid rgba(255,255,255,0.2);
+  border-radius: 100px;
+  font-size: 0.82rem;
+  color: rgba(250,247,242,0.8);
+  transition: all var(--transition-fast);
+}
+
+.findChip:hover {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+
+/* Jeong Tier Grid */
+.jeongTierGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+}
+
+.jeongTierCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-xl) var(--space-lg);
+  background: var(--bg-white);
+  border: 2px solid var(--border);
+  border-radius: var(--border-radius-lg);
+  transition: all var(--transition-base);
+  gap: var(--space-xs);
+}
+
+.jeongTierCard:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-md);
+}
+
+.jeongTierEmoji { font-size: 2rem; }
+
+.jeongTierLabel {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.jeongTierScore {
+  font-family: var(--font-score);
+  font-size: 1.4rem;
+  color: var(--text-muted);
+}
+
+.jeongTierDesc {
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
 /* Sections */
 .section {
   padding: var(--space-4xl) 0;
@@ -210,6 +307,84 @@
   text-align: center;
 }
 
+/* Modal */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(26,34,56,0.7);
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-lg);
+}
+
+.modal {
+  background: var(--bg-white);
+  border-radius: var(--border-radius-lg);
+  padding: var(--space-2xl);
+  max-width: 540px;
+  width: 100%;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  box-shadow: var(--shadow-xl);
+}
+
+.modal p { margin-top: var(--space-md); color: var(--text-secondary); line-height: 1.7; }
+
+.modalClose {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.modalTitle {
+  font-family: var(--font-heading);
+  font-size: 1.6rem;
+  color: var(--text-primary);
+}
+
+.modalSub {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  margin-top: var(--space-xl);
+  margin-bottom: 0;
+}
+
+.modalTiers {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-top: var(--space-lg);
+}
+
+.modalTier {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-md);
+  padding: var(--space-sm) var(--space-md);
+  border-left: 3px solid;
+  border-radius: 0 var(--border-radius-sm) var(--border-radius-sm) 0;
+  background: var(--bg-primary);
+  font-size: 0.9rem;
+}
+
+.modalTier strong { flex-shrink: 0; }
+.modalTier span { color: var(--text-secondary); }
+
+.modalLink {
+  display: inline-block;
+  margin-top: var(--space-xl);
+  color: var(--accent);
+  font-weight: 600;
+}
+
 /* Responsive */
 @media (max-width: 1024px) {
   .grid {
@@ -249,20 +424,13 @@
   }
 }
 
+@media (max-width: 900px) { .jeongTierGrid { grid-template-columns: repeat(2,1fr); } }
+
 @media (max-width: 480px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .gridSmall {
-    grid-template-columns: 1fr;
-  }
-
-  .categoryGrid {
-    grid-template-columns: 1fr;
-  }
-
-  .scrollItem {
-    min-width: 260px;
-  }
+  .grid { grid-template-columns: 1fr; }
+  .gridSmall { grid-template-columns: 1fr; }
+  .categoryGrid { grid-template-columns: 1fr; }
+  .scrollItem { min-width: 260px; }
+  .jeongTierGrid { grid-template-columns: 1fr 1fr; }
+  .findTitle { font-size: 1.4rem; }
 }
