@@ -8,7 +8,7 @@ export const metadata = {
   keywords: 'Korean products, Korean snacks review, K-beauty review, Korean food, Korea travel, honest reviews',
   openGraph: {
     title: 'Honest Korean Reviews',
-    description: 'Real Korean product reviews by a couple who pretend they\'re tourists.',
+    description: 'Real Korean product reviews by Koreans who see their own country through a traveler\'s eyes.',
     type: 'website',
     locale: 'en_US',
     siteName: 'Honest Korean Reviews',
@@ -16,7 +16,7 @@ export const metadata = {
   twitter: {
     card: 'summary_large_image',
     title: 'Honest Korean Reviews',
-    description: 'Real Korean product reviews by a couple who pretend they\'re tourists.',
+    description: 'Real Korean product reviews by Koreans who see their own country through a traveler\'s eyes.',
   },
 };
 

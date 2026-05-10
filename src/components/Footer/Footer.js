@@ -11,7 +11,7 @@ export default function Footer() {
               <span>🇰🇷</span>
               <div>
                 <div className={styles.logoTitle}>Honest Korean Reviews</div>
-                <p className={styles.tagline}>Real reviews by a Korean couple who pretend they&apos;re tourists.</p>
+                <p className={styles.tagline}>Real reviews by Koreans who see their own country through a traveler&apos;s eyes.</p>
               </div>
             </div>
           </div>

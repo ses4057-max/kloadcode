@@ -22,7 +22,7 @@ export default function Home() {
           <div className={styles.heroText}>
             <p className={styles.heroLabel}>🇰🇷 Since 2026</p>
             <h1 className={styles.heroTitle}>
-              Honest reviews of Korean products, by a Korean couple who pretend they&apos;re tourists.
+              Honest reviews of Korean products, by Koreans who review their own country through a traveler&apos;s eyes.
             </h1>
             <p className={styles.heroDesc}>
               We buy it, taste it, test it, score it — from 0 to 10, no exceptions.
@@ -57,7 +57,7 @@ export default function Home() {
           <div className={styles.sectionHeader}>
             <div>
               <h2 className="section-title">This Week&apos;s New Arrivals</h2>
-              <p className="section-subtitle">Fresh reviews, hot off the kitchen counter.</p>
+              <p className="section-subtitle">Fresh reviews, straight from our kitchen.</p>
             </div>
           </div>
           <div className={styles.scrollRow}>
