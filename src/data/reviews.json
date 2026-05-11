@@ -510,6 +510,57 @@
     "image": "/images/products/newjeans-bunny-plush.png"
   },
   {
+    "id": 12,
+    "slug": "zerosoda-cloop",
+    "product_name": "ZeroSoda Cloop",
+    "product_name_ko": "클룹 제로소다",
+    "brand": "Egnis (이그니스)",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 6.0,
+    "score_min": 6.0,
+    "score_seo": 6.5,
+    "one_liner": "Brilliant engineering. Someone forgot plastic bottles already exist.",
+    "tags": ["Zero sugar", "Carbonated", "Convenience store", "Low calorie"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-11",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: recent (2025), Seo: recent (2025)",
+    "sub_scores": {
+      "taste_quality": 6.5,
+      "packaging_design": 8.5,
+      "value": 5.5,
+      "foreigner_friendliness": 7.5,
+      "repurchase_intent": 5.5
+    },
+    "jeong_score": 1,
+    "aliases": {
+      "korean_official": "클룹 제로소다",
+      "korean_nicknames": ["클룹", "재밀봉 캔", "닫히는 캔 음료"],
+      "romanization": ["Cloop ZeroSoda", "CLOOP", "Ignis Zero Soda"],
+      "english_descriptors": ["resealable can Korea", "recloseable soda can", "zero sugar Korean soda", "korean can with lid", "resealing carbonated drink"],
+      "common_typos": ["clup zero soda", "kloop", "zerosoda cloop", "cloop zero"]
+    },
+    "how_to_spot": {
+      "color": "White can with colorful text, slim and tall",
+      "shape": "Standard 500ml can with a distinctive resealable pull-tab on top",
+      "size": "500ml",
+      "store_location": "Convenience store chiller, beverage section, near other zero-sugar drinks",
+      "price_range": "₩1,500 — ₩2,000",
+      "distinctive_feature": "The top tab presses back down to reseal — you'll notice it looks different from a regular can opening"
+    },
+    "paragraphs": [
+      "Korea has a specific consumer anxiety: the half-finished can. You crack one open on the subway, drink half, and then stare at it. A bottle has a cap. A can has regret. This is presumably the existential crisis that inspired someone at Egnis to spend years engineering a can that reseals. Whether that was a genuine consumer insight or a solution aggressively hunting for a problem, we present it to you without judgment. Mostly.",
+      "ZeroSoda Cloop is a zero-calorie sparkling drink by Egnis, a Korean beverage startup. The headline feature is a resealable can top — press the tab back down after opening and the carbonation stays locked in. It actually works. Available in multiple flavors. Found at most convenience stores across Korea. The 500ml size means you have more drink than a standard can, which theoretically justifies the resealing technology, if you're the type to need that argument spelled out.",
+      "Min: Six points. The resealing mechanism is genuinely clever — for about thirty seconds, until your brain points out that plastic bottles solved this in 1973. It's a 500ml can. If finishing 500ml of soda in one sitting is a challenge, the product isn't your problem. I also need to address the name: 'ZeroSoda' is a category description, not a brand. 'Cloop' sounds like the noise a drain makes. Somewhere there's a marketing team that needs a conversation.",
+      "Seo: 6.5, and I'm comfortable with that. Yes, Min is technically correct that bottles exist. But there's something satisfying about opening a can and being able to seal it again — it feels like the future, even if the future is slightly unnecessary. The carbonation genuinely holds. The taste is clean and light, exactly what you want from zero sugar. Min just can't criticize the actual technology so he's attacking the name. Which, fine, Cloop is a weird name. The drink is still good.",
+      "Try it at least once, purely for the experience of pressing the lid back down. It works, and you'll want to show someone. After the novelty fades, whether you return depends on how seriously you take carbonation preservation. For most people: interesting once, forgettable thereafter. For slow drinkers and anyone who hates flat soda: this is legitimately your drink.",
+      "Composite 6.0. Min at 6.0, Seo at 6.5 — unusually close for a couple that disagrees about most things, which suggests they're both right: the technology is real, the necessity is debatable. Jeong Score of 1 is not a criticism — it's just math. Jeong requires decades of shared cultural memory. Cloop has existed for two years. Check back in 2040."
+    ],
+    "image": "/images/products/zerosoda.jpg"
+  },
+  {
     "id": 11,
     "slug": "toreta",
     "product_name": "Toreta",
