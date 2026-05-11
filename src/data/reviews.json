@@ -508,5 +508,56 @@
       "7.0 composite. Min judges the object; Seo judges the experience. Both interpretations are valid. Jeong Score of 2."
     ],
     "image": "/images/products/newjeans-bunny-plush.png"
+  },
+  {
+    "id": 11,
+    "slug": "toreta",
+    "product_name": "Toreta",
+    "product_name_ko": "토레타",
+    "brand": "Coca-Cola Korea",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 5.5,
+    "score_min": 4.0,
+    "score_seo": 7.5,
+    "one_liner": "The label says 10 vegetables. Min says 10 drops of vegetable water.",
+    "tags": ["Low calorie", "Ion drink", "Convenience store", "Zero version available"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-11",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: ~20, Seo: ~18",
+    "sub_scores": {
+      "taste_quality": 6.0,
+      "packaging_design": 7.0,
+      "value": 6.5,
+      "foreigner_friendliness": 7.5,
+      "repurchase_intent": 5.0
+    },
+    "jeong_score": 4,
+    "aliases": {
+      "korean_official": "토레타",
+      "korean_nicknames": ["토레타 제로", "이온음료", "과채 이온음료"],
+      "romanization": ["Toreta", "Toreta Zero", "Toretta"],
+      "english_descriptors": ["Korean ion drink", "fruit vegetable sports drink", "low calorie sports drink korea", "green can korean drink", "coca cola korea sports drink"],
+      "common_typos": ["torretta", "torettta", "toretta", "toreta zero"]
+    },
+    "how_to_spot": {
+      "color": "White can with lime green top and bottom stripe, colorful fruit illustrations",
+      "shape": "Standard 340ml slim can",
+      "size": "340ml",
+      "store_location": "Beverage fridge, sports/ion drink section, usually next to Pocari Sweat",
+      "price_range": "₩1,500 — ₩1,800 (often 1+1 at convenience stores)",
+      "distinctive_feature": "Large 토레타 text in bold navy, floating fruit and vegetable droplets on white background"
+    },
+    "paragraphs": [
+      "There's a specific type of Korean teenager who discovers Toreta: the one who just finished a brutal study session at the library, shuffles into the convenience store at 11pm, sees the 1+1 sign above the ion drinks, and grabs two without even reading the label. That's how most Koreans bonded with this drink — not because it's special, but because the deal was impossible to ignore. The 1+1 promotion has basically been Toreta's personality since launch.",
+      "Toreta is a low-calorie ion replenishment drink made by Coca-Cola Korea, launched in 2012. It markets itself on '10 fruits and vegetables' blended into a light sports drink format. At 58 calories per 340ml can, it sits comfortably in the guilt-free zone. Unlike Pocari Sweat — which leans salty and serious — Toreta goes fruity and approachable. A Zero version is also available. You'll find it in virtually every convenience store in Korea, almost always on promotion.",
+      "Min: I am constitutionally incapable of ignoring ingredient labels, and Toreta made me suspicious. The can proudly says '10 kinds of fruits and vegetables.' Sounds impressive. Then you read the actual percentages: total vegetable content is 1%. And of that 1%, a significant portion is water-based concentrate. You're essentially drinking water with a vegetable rumor in it. This is not nutrition — it's marketing dressed as health. That said, if it's on a 1+1 deal? Fine. I'll drink it. But I'm not proud of it.",
+      "Seo: Min is completely overthinking the label. Nobody buys Toreta for the vegetables — you buy it because you're tired, it's refreshing, and the 1+1 is right there. Compared to Pocari Sweat, Toreta is lighter and doesn't have that salty aftertaste that some foreigners find strange. The Zero version means I can grab two without guilt. For what it is — a convenient, affordable ion drink — it absolutely delivers.",
+      "Worth trying if you're in Korea, especially if it's on a 1+1 deal (very common at CU and GS25). It's lighter and sweeter than Pocari Sweat — a good entry point if the salty sports drink profile is unfamiliar to you. The Zero version is a solid pick for calorie-conscious travelers. If you're the type to read ingredient labels carefully (like Min), just manage your expectations about the vegetable content.",
+      "The 5.5 score is an honest average of a real disagreement: Min's 4.0 (skeptical of the marketing, prefers Pocari) versus Seo's 7.5 (appreciates the lighter taste and value). Neither is wrong. Jeong Score of 4: Toreta is a modern convenience store staple with no deep cultural roots. It launched in 2012 under Coca-Cola Korea — too young, too corporate for genuine nostalgia. It's a product of the 1+1 era, not the childhood one."
+    ],
+    "image": "/images/products/toreta.jpg"
   }
 ]
