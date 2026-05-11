@@ -185,6 +185,13 @@ dried their hair with a hot air gun." (바나나우유)
   변경 내용 (1~3 bullet)
   diff 또는 코드
   "STRATEGIST 검토 준비 완료" 또는 "QA 검토 준비 완료"
+
+  구현 완료 후 반드시 아래 순서로 배포:
+
+  npm run build — 빌드 그린 확인
+  git add [변경파일]
+  git commit -m "feat/fix: 변경내용 요약"
+  git push origin master Vercel이 자동 배포함. push까지 완료해야 작업 종료.
   ```
 
 ### STRATEGIST (사업 검증자)
