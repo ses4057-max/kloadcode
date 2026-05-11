@@ -1,6 +1,6 @@
 import reviews from '@/data/reviews.json';
 
-const BASE_URL = 'https://kloadcode.vercel.app';
+const BASE_URL = 'https://honestkoreanreviews.com';
 
 export default function sitemap() {
   const staticPages = [

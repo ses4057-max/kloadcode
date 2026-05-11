@@ -3,7 +3,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
-  metadataBase: new URL('https://kloadcode.vercel.app'),
+  metadataBase: new URL('https://honestkoreanreviews.com'),
   verification: {
     google: 'rzx98-ahuU6MjV-TGSu9H1V6KmAWpQFjyfYSH-4Iv4c',
   },
@@ -28,10 +28,10 @@ const websiteJsonLd = {
   '@context': 'https://schema.org',
   '@type': 'WebSite',
   name: 'Honest Korean Reviews',
-  url: 'https://kloadcode.vercel.app',
+  url: 'https://honestkoreanreviews.com',
   potentialAction: {
     '@type': 'SearchAction',
-    target: 'https://kloadcode.vercel.app/find-this?q={search_term_string}',
+    target: 'https://honestkoreanreviews.com/find-this?q={search_term_string}',
     'query-input': 'required name=search_term_string',
   },
 };
