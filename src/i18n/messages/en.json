@@ -1,0 +1,23 @@
+{
+  "nav.drinks": "Drinks",
+  "nav.snacks": "Snacks",
+  "nav.ramen": "Ramen",
+  "nav.kbeauty": "K-Beauty",
+  "nav.jeong": "Jeong Score",
+  "nav.about": "About",
+  "nav.find": "Find a Product",
+  "hero.headline": "The only honest Korean product database written BY Koreans, FOR foreigners.",
+  "hero.subhead": "We didn't try these products — we grew up with them.",
+  "hero.cta.browse": "Browse Reviews",
+  "hero.cta.jeong": "What's a Jeong Score?",
+  "search.placeholder": "Type Korean text, English, or describe what you saw…",
+  "section.newArrivals": "This Week's New Arrivals",
+  "section.highestJeong": "Highest Jeong Scores",
+  "section.polarizing": "Polarizing Picks",
+  "section.categories": "Browse by Category",
+  "footer.tagline": "Real reviews by Koreans who see their own country through a traveler's eyes.",
+  "footer.copy": "Made with 정 in Seoul.",
+  "loading": "잠시만요…",
+  "notFound.title": "어머나…",
+  "notFound.body": "Oh no — this page doesn't exist."
+}

@@ -42,7 +42,8 @@
       "store_location": "Milk fridge, near other dairy drinks",
       "price_range": "₩1,400 — ₩1,600",
       "distinctive_feature": "Clay-pot silhouette printed on label; unmistakable yellow color"
-    }
+    },
+    "score_reasoning": "The 8.5 main score reflects genuinely excellent flavour and iconic packaging. Tasted blind and isolated from the story, this would score a 7.5 — the extra point is cultural tax paid willingly. Jeong Score of 10 is not hyperbole: there is no other product in Korea with a more universally shared childhood memory. Both numbers together tell the full truth."
   },
   {
     "id": 2,
@@ -87,7 +88,8 @@
       "store_location": "Milk fridge, near other dairy cartons",
       "price_range": "₩1,200 — ₩1,400",
       "distinctive_feature": "Maeil (매일) brand logo prominently displayed; chocolate brown color scheme"
-    }
+    },
+    "score_reasoning": "7.0 is a fair and honest score. The chocolate flavour is lighter than foreign palates expect — intentionally so, because Koreans prefer subtle milk drinks. The high value sub-score (7.5) pulls the composite up. Jeong Score of 8 is authentic: this specific carton format was the school cafeteria drink for a generation of Korean kids. That memory is real."
   },
   {
     "id": 3,
@@ -132,7 +134,8 @@
       "store_location": "Snack aisle, usually near front of store",
       "price_range": "₩1,800 — ₩2,200",
       "distinctive_feature": "Bold 허니버터칩 text; yellow honeycomb design on packaging"
-    }
+    },
+    "score_reasoning": "9.0. The taste sub-score of 9.5 is the anchor — the honey-butter balance is genuinely world-class. The Jeong Score of 7 (not higher) reflects that this launched in 2014: real nostalgia, but not generational in the way that Banana Milk or Shin Ramyun are. It's building a Jeong legacy in real time. The overall score lands where it should: exceptional product, recent history."
   },
   {
     "id": 4,
@@ -177,7 +180,8 @@
       "store_location": "Ramen aisle; often displayed at front near register",
       "price_range": "₩1,600 — ₩2,000",
       "distinctive_feature": "Black bag with red fire chicken (불닭) graphic; '2X' clearly printed"
-    }
+    },
+    "score_reasoning": "7.5 composite from a genuine Min/Seo split: 8.5 vs 6.5. Min scores the flavour beneath the heat; Seo scores the physical experience. Both are correct. The composite 7.5 reflects that this is an excellent product for people who can handle it, and a punishing one for those who cannot. Foreigner-friendliness of 5.0 is not a flaw — it's an honest warning."
   },
   {
     "id": 5,
@@ -222,7 +226,8 @@
       "store_location": "Snack aisle or near checkout; sometimes at dedicated display",
       "price_range": "₩4,000 — ₩5,000 per box",
       "distinctive_feature": "Orion brand logo on red box; silver foil individual wrappers with 초코파이 printed"
-    }
+    },
+    "score_reasoning": "6.5, which may feel low for such an icon. We score the product, not the legend. The chocolate coating is thin, the sponge unremarkable. By modern snack standards this would not survive without its nostalgia moat. The Jeong Score of 9 tells the real story: a cultural monument that tastes average. Both numbers are true. You need both to understand it."
   },
   {
     "id": 6,
@@ -267,7 +272,8 @@
       "store_location": "Ramen aisle, usually takes up an entire shelf section",
       "price_range": "₩1,100 — ₩1,400",
       "distinctive_feature": "Bold red 신라면 text; Nongshim logo; sold everywhere including abroad"
-    }
+    },
+    "score_reasoning": "8.0 — the rare review where Min and Seo agree completely. Taste at 8.5 is the anchor. Value at 9.0 is almost absurd: this is the best dollar-per-unit-of-satisfaction ratio in Korean convenience food. The only drag is foreigner-friendliness at 7.5 — the spice level needs a warning for low-heat palates. Jeong Score of 9: late-night ramen is a universal Korean experience."
   },
   {
     "id": 7,
@@ -311,7 +317,8 @@
       "store_location": "Cold drink section of CU convenience stores",
       "price_range": "₩2,300 — ₩2,700",
       "distinctive_feature": "CU Heyroo (헤이루) branding; tiramisu layer illustration on packaging; only at CU"
-    }
+    },
+    "score_reasoning": "4.0, and we are being generous. The taste score of 3.5 anchors this: the artificial sweetness overwhelms any tiramisu character. Would-buy-again at 2.0 is the honest verdict — we would not. The packaging earns a 5.0 because CU convenience store design is generally decent. No Jeong involved whatsoever. A product that exists to fill shelf space, and fails even at that."
   },
   {
     "id": 8,
@@ -355,7 +362,8 @@
       "store_location": "Olive Young essence/serum section",
       "price_range": "₩15,000 — ₩18,000",
       "distinctive_feature": "Clear bottle showing the amber-tinted essence; COSRX logo; '96%' prominently displayed"
-    }
+    },
+    "score_reasoning": "9.5. Seo's perfect 10 on quality is not inflation — her skin visibly transformed in two weeks of daily use. Min's 9.0 accounts for the texture adjustment period. Value at 9.5 is hard to argue at $12 for 100ml of something this effective. The 0.5 gap from a perfect score is honest caution, not a flaw. Jeong Score of 4: globally famous, Korean-made, but a recent phenomenon rather than a cultural institution."
   },
   {
     "id": 9,
@@ -399,7 +407,8 @@
       "store_location": "Olive Young makeup section; often displayed near entrance",
       "price_range": "₩23,000 — ₩27,000",
       "distinctive_feature": "Unmistakable red compact; TIRTIR logo; sold with shade number on box"
-    }
+    },
+    "score_reasoning": "8.5 from a narrow Min/Seo split (8.0 vs 9.0). Seo's daily use verdict drives the composite toward the higher end. Packaging at 9.5 is deserved — the red compact is a design statement. Value at 7.5 reflects the premium tier honestly. Jeong Score of 3: excellent product, very new, no cultural history yet. Judge this purely on performance."
   },
   {
     "id": 10,
@@ -443,6 +452,7 @@
       "store_location": "K-pop merch shops; Duty Free; SM/HYBE official stores",
       "price_range": "₩25,000 — ₩32,000",
       "distinctive_feature": "NewJeans / Phoning branding tag; minimalist bunny face design; sold in branded packaging"
-    }
+    },
+    "score_reasoning": "7.0 composite, masking a real Min/Seo divide: 6.0 vs 8.0. Min judges the object; Seo judges the experience of owning a piece of a cultural moment. Both interpretations are valid, and the 7.0 composite reflects that tension honestly. Jeong Score of 2: NewJeans debuted in 2022. This plush is from 2024. Jeong takes decades to accumulate. That's not a criticism — it's just time."
   }
 ]

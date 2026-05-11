@@ -1,6 +1,7 @@
 'use client';
 import { useState } from 'react';
 import Link from 'next/link';
+import LanguageSwitcher from '@/components/LanguageSwitcher/LanguageSwitcher';
 import styles from './Header.module.css';
 
 export default function Header() {
@@ -28,6 +29,7 @@ export default function Header() {
 
         <div className={styles.actions}>
           <Link href="/find-this" className={styles.findBtn} aria-label="Find a product">🔍 Find</Link>
+          <LanguageSwitcher />
           <Link href="/newsletter" className={styles.subscribe}>Subscribe</Link>
           <button
             className={styles.burger}

@@ -51,7 +51,7 @@ export default function Home() {
   const featured = reviews.find(r => r.slug === 'cosrx-snail-mucin-essence');
   const newest = [...reviews].sort((a, b) => new Date(b.date) - new Date(a.date)).slice(0, 4);
   const highestJeong = [...reviews].sort((a, b) => (b.jeong_score || 0) - (a.jeong_score || 0)).slice(0, 8);
-  const polarizing = reviews.filter(r => Math.abs(r.minScore - r.sarahScore) >= 2).slice(0, 4);
+  const polarizing = reviews.filter(r => Math.abs(r.minScore - r.sarahScore) >= 3).slice(0, 4);
 
   const orderedCategories = ['drinks', 'snacks', 'ramen', 'convenience', 'kpop', 'kbeauty'];
   const sortedCategories = orderedCategories

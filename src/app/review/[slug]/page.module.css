@@ -268,6 +268,16 @@
   line-height: 1.8;
 }
 
+/* Score Reasoning */
+.scoreReasoning {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--text-secondary);
+  border-left: 3px solid var(--accent);
+  padding-left: var(--space-lg);
+  font-style: italic;
+}
+
 /* How to Spot */
 .spotGrid {
   display: grid;

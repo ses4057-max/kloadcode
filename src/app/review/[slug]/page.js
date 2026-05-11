@@ -235,7 +235,7 @@ export default async function ReviewPage({ params }) {
           </div>
         </section>
 
-        {/* Should You Try It */}
+        {/* Should You Try It — Paragraph 5 */}
         <section className={styles.section}>
           <div className="container-narrow">
             <h2 className={styles.sectionTitle}>Should You Try It?</h2>
@@ -247,6 +247,16 @@ export default async function ReviewPage({ params }) {
             </div>
           </div>
         </section>
+
+        {/* Score Reasoning — Paragraph 6 */}
+        {review.score_reasoning && (
+          <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
+            <div className="container-narrow">
+              <h2 className={styles.sectionTitle}>Score Reasoning</h2>
+              <p className={styles.scoreReasoning}>{review.score_reasoning}</p>
+            </div>
+          </section>
+        )}
 
         {/* How to Spot It */}
         {review.how_to_spot && (
