@@ -14,18 +14,21 @@ export async function generateMetadata({ params }) {
   const { slug } = await params;
   const review = reviews.find(r => r.slug === slug);
   if (!review) return {};
-  const desc = `${review.verdict} ${review.score}/10. Jeong Score ${review.jeong_score}/10. Reviewed by Min & Seo, Koreans living in Korea.`;
+  
+  const title = `${review.product_name} Review — Honest Korean Reviews`;
+  const desc = `${review.one_liner}. ${review.score}/10. ${review.jeong_score}/10 Jeong. Reviewed by Min & Seo, Koreans living in Korea.`;
+  
   return {
-    title: `${review.name} Review (${review.score}/10) — Honest Korean Reviews`,
+    title,
     description: desc.slice(0, 155),
     openGraph: {
-      title: `${review.name} Review — Honest Korean Reviews`,
+      title,
       description: desc.slice(0, 155),
       images: [{ url: review.image }],
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${review.name} Review — Honest Korean Reviews`,
+      title,
       description: desc.slice(0, 155),
     },
   };
@@ -55,21 +58,20 @@ function SubScoreBar({ label, score, weight }) {
 
 const REVIEW_TYPE_LABELS = {
   childhood: { icon: '👶', label: 'Lived with since childhood' },
-  tasted: { icon: '🍽', label: 'Personally tasted & tested' },
+  tasted: { icon: '🍽', label: 'Personally tasted' },
   first_impressions: { icon: '👀', label: 'First impressions only' },
 };
 
-const STORE_COLORS = {
-  CU: '#00A0E9',
-  GS25: '#0066B3',
-  Emart24: '#F05A28',
-  '7-Eleven': '#007940',
-  'Olive Young': '#4CAF50',
-  Daiso: '#E60026',
-  'E-mart': '#FFD700',
-  Homeplus: '#E31E26',
-  'Costco Korea': '#005DAA',
-  'Duty-free': '#8B6914',
+const STORE_INFO = {
+  CU: { color: '#652D90', icon: '🏪' },
+  GS25: { color: '#00539C', icon: '🏪' },
+  Emart24: { color: '#FFB81C', icon: '🏪' },
+  '7-Eleven': { color: '#EE1C25', icon: '🏪' },
+  'Olive Young': { color: '#97BF0D', icon: '✨' },
+  Daiso: { color: '#E50012', icon: '🛍' },
+  'E-mart': { color: '#FFD700', icon: '🛒' },
+  Homeplus: { color: '#E31E26', icon: '🛒' },
+  Costco: { color: '#005DAA', icon: '🛒' },
 };
 
 export default async function ReviewPage({ params }) {
@@ -78,16 +80,9 @@ export default async function ReviewPage({ params }) {
   if (!review) notFound();
 
   const similar = reviews
-    .filter(r => r.id !== review.id)
+    .filter(r => r.id !== review.id && r.category === review.category)
     .sort((a, b) => Math.abs(a.score - review.score) - Math.abs(b.score - review.score))
     .slice(0, 4);
-
-  const tags = [
-    ...(review.tags || []),
-    review.halalFriendly && 'Halal-friendly',
-    review.vegan && 'Vegan',
-    review.glutenFree && 'Gluten-free',
-  ].filter(Boolean);
 
   const reviewType = REVIEW_TYPE_LABELS[review.review_type] || REVIEW_TYPE_LABELS.tasted;
 
@@ -96,7 +91,7 @@ export default async function ReviewPage({ params }) {
     '@type': 'Review',
     itemReviewed: {
       '@type': 'Product',
-      name: review.name,
+      name: review.product_name,
       brand: { '@type': 'Brand', name: review.brand },
     },
     reviewRating: {
@@ -107,7 +102,7 @@ export default async function ReviewPage({ params }) {
     },
     author: { '@type': 'Person', name: 'Min & Seo' },
     publisher: { '@type': 'Organization', name: 'Honest Korean Reviews' },
-    reviewBody: review.verdict,
+    reviewBody: review.one_liner,
   };
 
   return (
@@ -118,43 +113,46 @@ export default async function ReviewPage({ params }) {
       />
       <article className={styles.page}>
 
-        {/* Hero */}
+        {/* Header/Hero */}
         <section className={styles.hero}>
           <div className={styles.heroInner}>
             <div className={styles.heroImage}>
-              <Image src={review.image} alt={review.name} width={600} height={450} className={styles.heroImg} priority />
+              <Image src={review.image} alt={review.product_name} width={600} height={450} className={styles.heroImg} priority />
+              <div className={styles.reviewTypeBadge}>
+                {reviewType.icon} {reviewType.label}
+              </div>
             </div>
             <div className={styles.heroInfo}>
               <div className={styles.heroTop}>
                 <span className={styles.brand}>{review.brand}</span>
-                <span className={styles.reviewTypeBadge}>
-                  {reviewType.icon} {reviewType.label}
-                </span>
               </div>
-              <h1 className={styles.title}>{review.name}</h1>
-              <p className={styles.titleKo}>{review.nameKo}</p>
-              <p className={styles.verdict}>&ldquo;{review.verdict}&rdquo;</p>
+              <h1 className={styles.title}>{review.product_name}</h1>
+              <p className={styles.titleKo}>{review.product_name_ko}</p>
+              <p className={styles.oneLiner}>&ldquo;{review.one_liner}&rdquo;</p>
 
               <div className={styles.scoreRow}>
-                <ScoreBadge score={review.score} size="xl" />
-                {review.jeong_score !== undefined && (
+                <div className={styles.mainScore}>
+                  <ScoreBadge score={review.score} size="xl" />
+                </div>
+                <div className={styles.jeongScore}>
                   <JeongBadge score={review.jeong_score} size="lg" />
-                )}
+                </div>
               </div>
 
               <div className={styles.dualScores}>
                 <div className={styles.personScore}>
                   <span className={styles.personName}>👨 Min&apos;s Score</span>
-                  <ScoreBadge score={review.minScore} size="sm" />
+                  <ScoreBadge score={review.score_min} size="sm" />
                 </div>
                 <div className={styles.personScore}>
                   <span className={styles.personName}>👩 Seo&apos;s Score</span>
-                  <ScoreBadge score={review.sarahScore} size="sm" />
+                  <ScoreBadge score={review.score_seo} size="sm" />
                 </div>
               </div>
 
-              <div className={styles.price}>
-                ₩{review.priceKRW.toLocaleString()} · ${review.priceUSD.toFixed(2)}
+              <div className={styles.priceRow}>
+                <span className={styles.priceKrw}>₩{review.price_krw.toLocaleString()}</span>
+                <span className={styles.priceUsd}>${review.price_usd.toFixed(2)}</span>
               </div>
 
               {review.first_tasted_age && (
@@ -166,194 +164,184 @@ export default async function ReviewPage({ params }) {
           </div>
         </section>
 
-        {/* Korean Memory */}
-        {review.korean_memory && (
-          <section className={styles.section}>
-            <div className="container-narrow">
-              <div className={styles.memoryBox}>
-                <span className={styles.memoryIcon}>🇰🇷</span>
-                <div>
-                  <h2 className={styles.memoryTitle}>The Korean Memory</h2>
-                  <p className={styles.memoryText}>{review.korean_memory}</p>
-                </div>
-              </div>
-            </div>
-          </section>
-        )}
-
-        {/* Sub Scores */}
-        <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
+        {/* Content Body — 6 Paragraphs */}
+        <section className={styles.content}>
           <div className="container-narrow">
-            <h2 className={styles.sectionTitle}>Detailed Scores</h2>
-            <div className={styles.subScores}>
-              <SubScoreBar label="Taste & Quality" score={review.subScores.taste} weight={40} />
-              <SubScoreBar label="Packaging & Design" score={review.subScores.packaging} weight={15} />
-              <SubScoreBar label="Value for Money" score={review.subScores.value} weight={20} />
-              <SubScoreBar label="Foreigner-Friendliness" score={review.subScores.foreignerFriendly} weight={15} />
-              <SubScoreBar label="Would Buy Again" score={review.subScores.wouldBuyAgain} weight={10} />
+            
+            {/* Paragraph 1: The Korean Memory */}
+            <div className={styles.memoryBox}>
+              <div className={styles.memoryLabel}>🇰🇷 The Korean Memory</div>
+              <p className={styles.memoryText}>{review.paragraphs[0]}</p>
             </div>
-          </div>
-        </section>
 
-        {/* Review Body */}
-        <section className={styles.section}>
-          <div className="container-narrow">
-            <h2 className={styles.sectionTitle}>What It Actually Is</h2>
-            <div className={styles.reviewBody}>
-              {review.reviewBody.split('\n\n').map((p, i) => (
-                <p key={i}>{p}</p>
-              ))}
+            {/* Paragraph 2: What it actually is */}
+            <div className={styles.bodySection}>
+              <h2>What it actually is</h2>
+              <p>{review.paragraphs[1]}</p>
             </div>
-          </div>
-        </section>
 
-        {/* Min & Seo Takes */}
-        <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
-          <div className="container-narrow">
-            <div className={styles.takes}>
+            {/* Paragraph 3 & 4: Min & Seo Takes */}
+            <div className={styles.takesGrid}>
               <div className={styles.takeBox}>
-                <div className={styles.takeHeader}>
-                  <span className={styles.takeAvatar}>👨</span>
-                  <div>
-                    <h3 className={styles.takeName}>Min&apos;s Take</h3>
-                    <ScoreBadge score={review.minScore} size="sm" />
-                  </div>
-                </div>
-                <p className={styles.takeText}>{review.minTake}</p>
+                <h3>Min&apos;s Take</h3>
+                <p><em>{review.paragraphs[2]}</em></p>
               </div>
               <div className={styles.takeBox}>
-                <div className={styles.takeHeader}>
-                  <span className={styles.takeAvatar}>👩</span>
-                  <div>
-                    <h3 className={styles.takeName}>Seo&apos;s Take</h3>
-                    <ScoreBadge score={review.sarahScore} size="sm" />
-                  </div>
-                </div>
-                <p className={styles.takeText}>{review.sarahTake}</p>
+                <h3>Seo&apos;s Take</h3>
+                <p><em>{review.paragraphs[3]}</em></p>
               </div>
             </div>
+
+            {/* Paragraph 5: Should you try it? */}
+            <div className={styles.bodySection}>
+              <h2>Should you try it?</h2>
+              <p>{review.paragraphs[4]}</p>
+            </div>
+
+            {/* Paragraph 6: Score reasoning */}
+            <div className={styles.bodySection}>
+              <h2>Score Reasoning</h2>
+              <p>{review.paragraphs[5]}</p>
+            </div>
+
+            {/* Image Gallery Placeholder */}
+            <div className={styles.gallery}>
+              {/* Up to 5 photos — for now showing the main image as a placeholder gallery */}
+              <div className={styles.galleryItem}>
+                <Image src={review.image} alt="Product view 1" width={200} height={150} />
+              </div>
+            </div>
+
           </div>
         </section>
 
-        {/* Should You Try It — Paragraph 5 */}
-        <section className={styles.section}>
+        {/* Sub-scores Chart */}
+        <section className={styles.subScoresSection}>
           <div className="container-narrow">
-            <h2 className={styles.sectionTitle}>Should You Try It?</h2>
-            <div className={styles.tryAdvice}>
-              {review.score >= 8 && <p>✅ <strong>Yes, absolutely.</strong> This is one of the products we recommend without hesitation. Add it to your Korea must-try list.</p>}
-              {review.score >= 6 && review.score < 8 && <p>🤔 <strong>Yes, with context.</strong> It&apos;s good — not life-changing, but worth experiencing. Check the sub-scores to see if it matches your preferences.</p>}
-              {review.score >= 4 && review.score < 6 && <p>⚠️ <strong>Only if you&apos;re curious.</strong> There are better options in this category, but if you spot it and want to try, go ahead. Just don&apos;t make a special trip for it.</p>}
-              {review.score < 4 && <p>❌ <strong>Skip it.</strong> We tried it so you don&apos;t have to. There are far better options — check our top-rated picks instead.</p>}
+            <h2 className={styles.sectionTitle}>Detailed Breakdown</h2>
+            <div className={styles.subScoresGrid}>
+              <SubScoreBar label="Taste & Quality" score={review.sub_scores.taste_quality} weight={40} />
+              <SubScoreBar label="Packaging & Design" score={review.sub_scores.packaging_design} weight={15} />
+              <SubScoreBar label="Value" score={review.sub_scores.value} weight={20} />
+              <SubScoreBar label="Foreigner-Friendliness" score={review.sub_scores.foreigner_friendliness} weight={15} />
+              <SubScoreBar label="Repurchase Intent" score={review.sub_scores.repurchase_intent} weight={10} />
             </div>
           </div>
         </section>
-
-        {/* Score Reasoning — Paragraph 6 */}
-        {review.score_reasoning && (
-          <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
-            <div className="container-narrow">
-              <h2 className={styles.sectionTitle}>Score Reasoning</h2>
-              <p className={styles.scoreReasoning}>{review.score_reasoning}</p>
-            </div>
-          </section>
-        )}
 
         {/* How to Spot It */}
-        {review.how_to_spot && (
-          <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
-            <div className="container-narrow">
-              <h2 className={styles.sectionTitle}>How to Spot It in Store</h2>
-              <div className={styles.spotGrid}>
-                <div className={styles.spotItem}><span className={styles.spotIcon}>🎨</span><div><strong>Color</strong><p>{review.how_to_spot.color}</p></div></div>
-                <div className={styles.spotItem}><span className={styles.spotIcon}>📦</span><div><strong>Shape</strong><p>{review.how_to_spot.shape}</p></div></div>
-                <div className={styles.spotItem}><span className={styles.spotIcon}>📏</span><div><strong>Size</strong><p>{review.how_to_spot.size}</p></div></div>
-                <div className={styles.spotItem}><span className={styles.spotIcon}>🏪</span><div><strong>Where in Store</strong><p>{review.how_to_spot.store_location}</p></div></div>
-                <div className={styles.spotItem}><span className={styles.spotIcon}>💰</span><div><strong>Price Range</strong><p>{review.how_to_spot.price_range}</p></div></div>
-                <div className={styles.spotItem}><span className={styles.spotIcon}>👁</span><div><strong>Look For</strong><p>{review.how_to_spot.distinctive_feature}</p></div></div>
+        <section className={styles.spotSection}>
+          <div className="container-narrow">
+            <h2 className={styles.sectionTitle}>How to Spot It in Store</h2>
+            <div className={styles.spotGrid}>
+              <div className={styles.spotItem}>
+                <span className={styles.spotIcon}>🎨</span>
+                <div className={styles.spotInfo}>
+                  <strong>Color</strong>
+                  <span>{review.how_to_spot.color}</span>
+                </div>
+              </div>
+              <div className={styles.spotItem}>
+                <span className={styles.spotIcon}>📦</span>
+                <div className={styles.spotInfo}>
+                  <strong>Shape</strong>
+                  <span>{review.how_to_spot.shape}</span>
+                </div>
+              </div>
+              <div className={styles.spotItem}>
+                <span className={styles.spotIcon}>📏</span>
+                <div className={styles.spotInfo}>
+                  <strong>Size</strong>
+                  <span>{review.how_to_spot.size}</span>
+                </div>
+              </div>
+              <div className={styles.spotItem}>
+                <span className={styles.spotIcon}>🏪</span>
+                <div className={styles.spotInfo}>
+                  <strong>Location</strong>
+                  <span>{review.how_to_spot.store_location}</span>
+                </div>
+              </div>
+              <div className={styles.spotItem}>
+                <span className={styles.spotIcon}>💰</span>
+                <div className={styles.spotInfo}>
+                  <strong>Price Range</strong>
+                  <span>{review.how_to_spot.price_range}</span>
+                </div>
+              </div>
+              <div className={styles.spotItem}>
+                <span className={styles.spotIcon}>👁</span>
+                <div className={styles.spotInfo}>
+                  <strong>Identifier</strong>
+                  <span>{review.how_to_spot.distinctive_feature}</span>
+                </div>
               </div>
             </div>
-          </section>
-        )}
+          </div>
+        </section>
 
-        {/* Tags */}
-        <section className={styles.section}>
+        {/* Tags & Where to Buy */}
+        <section className={styles.metaSection}>
           <div className="container-narrow">
-            <h2 className={styles.sectionTitle}>Tags &amp; Attributes</h2>
-            <div className={styles.tags}>
-              {tags.map(tag => (
-                <span key={tag} className="tag">{tag}</span>
+            <div className={styles.tagsRow}>
+              {review.tags.map(tag => (
+                <span key={tag} className={styles.tagPill}>#{tag}</span>
               ))}
+            </div>
+
+            <div className={styles.whereToBuy}>
+              <div className={styles.buyCol}>
+                <h3>🛒 Buy in Korea</h3>
+                <div className={styles.storeBadges}>
+                  {review.where_to_buy_kr.map(store => {
+                    const info = STORE_INFO[store] || { color: 'var(--text-secondary)', icon: '🏪' };
+                    return (
+                      <div key={store} className={styles.storeBadge} style={{ borderColor: info.color, color: info.color }}>
+                        <span>{info.icon}</span> {store}
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+              <div className={styles.buyCol}>
+                <h3>🌍 Buy Abroad (Affiliates)</h3>
+                <div className={styles.affiliateGrid}>
+                  {['Coupang Global', 'Amazon', 'YesStyle', 'Olive Young Global'].map(site => (
+                    <div key={site} className={styles.affiliateCard}>
+                      <span>{site}</span>
+                      <small>Affiliate Link Placeholder</small>
+                    </div>
+                  ))}
+                </div>
+                <p className={styles.disclosure}>
+                  This site contains affiliate links. We may earn a commission at no extra cost to you.
+                </p>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* Where to Buy */}
-        <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
-          <div className="container-narrow">
-            <h2 className={styles.sectionTitle}>Where to Buy</h2>
-            <h3 className={styles.buySubtitle}>🇰🇷 In Korea</h3>
-            <div className={styles.stores}>
-              {review.whereToBuy.map(store => (
-                <div
-                  key={store}
-                  className={styles.storeChip}
-                  style={{ borderColor: STORE_COLORS[store] || 'var(--border)', color: STORE_COLORS[store] || 'var(--text-primary)' }}
-                >
-                  {store}
-                </div>
-              ))}
-            </div>
-            <h3 className={styles.buySubtitle} style={{ marginTop: '1.5rem' }}>🌍 Buy Abroad</h3>
-            <div className={styles.affiliateCards}>
-              {['Coupang Global', 'Amazon', 'YesStyle'].map(shop => (
-                <div key={shop} className={styles.affiliateCard}>
-                  <span>{shop}</span>
-                  <span className={styles.affiliateTag}>Affiliate link coming soon</span>
-                </div>
-              ))}
-            </div>
-            <p className={styles.affiliate}>
-              <small>This site contains affiliate links. We may earn a small commission at no extra cost to you. Scores are never affected by affiliate relationships.</small>
-            </p>
-          </div>
-        </section>
-
-        {/* Country Recs */}
-        {review.countryRecs && (
-          <section className={styles.section}>
-            <div className="container-narrow">
-              <h2 className={styles.sectionTitle}>How Much Will You Like It?</h2>
-              <p style={{ color: 'var(--text-secondary)', marginBottom: '1.5rem' }}>Our prediction by country, based on taste preferences.</p>
-              <div className={styles.countryGrid}>
-                {Object.entries(review.countryRecs).map(([country, score]) => (
-                  <div key={country} className={styles.countryCard}>
-                    <span className={styles.countryName}>{country}</span>
-                    <span className={styles.countryScore}>{score}/10</span>
-                  </div>
+        {/* Similar Products */}
+        {similar.length > 0 && (
+          <section className={styles.similarSection}>
+            <div className="container">
+              <h2 className="section-title">If you liked this, try…</h2>
+              <div className={styles.similarGrid}>
+                {similar.map((r, i) => (
+                  <ReviewCard key={r.id} review={r} index={i} />
                 ))}
               </div>
             </div>
           </section>
         )}
 
-        {/* Similar */}
-        <section className={styles.section} style={{ background: 'var(--bg-white)' }}>
-          <div className="container">
-            <h2 className="section-title">If You Liked This, Try…</h2>
-            <p className="section-subtitle">Products with similar scores and vibes.</p>
-            <div className={styles.similarGrid}>
-              {similar.map((r, i) => (
-                <ReviewCard key={r.id} review={r} index={i} />
-              ))}
-            </div>
-          </div>
-        </section>
-
-        {/* Comments placeholder */}
-        <section className={styles.section}>
+        {/* Comments Placeholder */}
+        <section className={styles.commentsSection}>
           <div className="container-narrow">
             <h2 className={styles.sectionTitle}>Comments</h2>
-            <p style={{ color: 'var(--text-secondary)' }}>Comments are coming soon. Have a question? Email us at hello@honestkoreanreviews.com</p>
+            <div className={styles.commentsBox}>
+              Comments are currently disabled. Have a question? Email us!
+            </div>
           </div>
         </section>
 

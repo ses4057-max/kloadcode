@@ -23,7 +23,7 @@ export default function sitemap() {
 
   const reviewPages = reviews.map(r => ({
     url: `${BASE_URL}/review/${r.slug}`,
-    lastModified: new Date(r.date),
+    lastModified: new Date(r.reviewed_date),
     changeFrequency: 'monthly',
     priority: 0.9,
   }));

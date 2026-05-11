@@ -13,7 +13,7 @@ export default function ReviewCard({ review, index = 0 }) {
       <div className={styles.imageWrap}>
         <Image
           src={review.image}
-          alt={review.name}
+          alt={review.product_name}
           width={400}
           height={300}
           className={styles.image}
@@ -24,10 +24,10 @@ export default function ReviewCard({ review, index = 0 }) {
       </div>
       <div className={styles.content}>
         <span className={styles.brand}>{review.brand}</span>
-        <h3 className={styles.name}>{review.name}</h3>
-        <p className={styles.verdict}>{review.verdict}</p>
+        <h3 className={styles.name}>{review.product_name}</h3>
+        <p className={styles.verdict}>{review.one_liner}</p>
         <div className={styles.meta}>
-          <span className={styles.price}>₩{review.priceKRW.toLocaleString()} · ${review.priceUSD.toFixed(2)}</span>
+          <span className={styles.price}>₩{review.price_krw.toLocaleString()} · ${review.price_usd.toFixed(2)}</span>
         </div>
       </div>
     </Link>

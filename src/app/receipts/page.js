@@ -19,60 +19,43 @@ export default function ReceiptsPage() {
         <div className="container-narrow">
           <h1 className={styles.title}>Receipts</h1>
           <p className={styles.subtitle}>
-            Every product on this site was either personally purchased, received as a labeled sample, or a lifelong household item we&apos;ve known for decades. This page is our public audit trail.
+            Public archive of every product&apos;s purchase proof or sponsorship disclosure.
           </p>
-          <div className={styles.legend}>
-            {Object.values(SOURCE_LABELS).map(s => (
-              <span key={s.label} className={styles.legendItem}>
-                {s.icon} {s.label}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 
       <section className={styles.section}>
         <div className="container">
-          <div className={styles.tableWrap}>
-            <table className={styles.table}>
-              <thead>
-                <tr>
-                  <th>Product</th>
-                  <th>Brand</th>
-                  <th>Review Date</th>
-                  <th>Source</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                {reviews.map(r => {
-                  const src = SOURCE_LABELS[r.review_type] || SOURCE_LABELS.tasted;
-                  return (
-                    <tr key={r.id}>
-                      <td>
-                        <a href={`/review/${r.slug}`} className={styles.productLink}>
-                          {r.name}
-                          <span className={styles.nameKo}>{r.nameKo}</span>
-                        </a>
-                      </td>
-                      <td className={styles.brand}>{r.brand}</td>
-                      <td className={styles.date}>{r.date}</td>
-                      <td>
-                        <span className={styles.sourceBadge} style={{ color: src.color, borderColor: src.color }}>
-                          {src.icon} {src.label}
-                        </span>
-                      </td>
-                      <td className={styles.score}>{r.score}/10</td>
-                    </tr>
-                  );
-                })}
-              </tbody>
-            </table>
-          </div>
-
-          <div className={styles.note}>
-            <strong>Our commitment:</strong> Any product received as a sample is clearly labeled and never results in a higher score. Sponsorship never changes a score. Questions? Email receipts@honestkoreanreviews.com
-          </div>
+          <table className={styles.table}>
+            <thead>
+              <tr>
+                <th>Product</th>
+                <th>Date</th>
+                <th>Source</th>
+                <th>Evidence</th>
+              </tr>
+            </thead>
+            <tbody>
+              {reviews.map(r => {
+                const src = SOURCE_LABELS[r.review_type] || SOURCE_LABELS.tasted;
+                return (
+                  <tr key={r.id}>
+                    <td>
+                      <strong>{r.product_name}</strong><br />
+                      <small>{r.brand}</small>
+                    </td>
+                    <td>{r.reviewed_date}</td>
+                    <td>
+                      <span className={styles.sourceBadge} style={{ color: src.color, borderColor: src.color }}>
+                        {src.icon} {src.label}
+                      </span>
+                    </td>
+                    <td><small>Photo evidence coming Month 2</small></td>
+                  </tr>
+                );
+              })}
+            </tbody>
+          </table>
         </div>
       </section>
     </div>
