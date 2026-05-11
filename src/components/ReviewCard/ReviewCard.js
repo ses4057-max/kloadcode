@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import ScoreBadge from '../ScoreBadge/ScoreBadge';
+import JeongBadge from '../JeongBadge/JeongBadge';
 import styles from './ReviewCard.module.css';
 
 export default function ReviewCard({ review, index = 0 }) {
@@ -28,6 +29,9 @@ export default function ReviewCard({ review, index = 0 }) {
         <p className={styles.verdict}>{review.one_liner}</p>
         <div className={styles.meta}>
           <span className={styles.price}>₩{review.price_krw.toLocaleString()} · ${review.price_usd.toFixed(2)}</span>
+          {review.jeong_score !== undefined && (
+            <JeongBadge score={review.jeong_score} size="sm" showTooltip={false} />
+          )}
         </div>
       </div>
     </Link>

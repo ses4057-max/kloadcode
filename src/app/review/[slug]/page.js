@@ -204,13 +204,16 @@ export default async function ReviewPage({ params }) {
               <p>{review.paragraphs[5]}</p>
             </div>
 
-            {/* Image Gallery Placeholder */}
-            <div className={styles.gallery}>
-              {/* Up to 5 photos — for now showing the main image as a placeholder gallery */}
-              <div className={styles.galleryItem}>
-                <Image src={review.image} alt="Product view 1" width={200} height={150} />
+            {/* Image Gallery */}
+            {review.images && review.images.length > 1 && (
+              <div className={styles.gallery}>
+                {review.images.map((img, idx) => (
+                  <div key={idx} className={styles.galleryItem}>
+                    <Image src={img} alt={`Product view ${idx + 1}`} width={200} height={150} />
+                  </div>
+                ))}
               </div>
-            </div>
+            )}
 
           </div>
         </section>
@@ -305,14 +308,20 @@ export default async function ReviewPage({ params }) {
               </div>
               <div className={styles.buyCol}>
                 <h3>🌍 Buy Abroad (Affiliates)</h3>
-                <div className={styles.affiliateGrid}>
-                  {['Coupang Global', 'Amazon', 'YesStyle', 'Olive Young Global'].map(site => (
-                    <div key={site} className={styles.affiliateCard}>
-                      <span>{site}</span>
-                      <small>Affiliate Link Placeholder</small>
-                    </div>
-                  ))}
-                </div>
+                {review.affiliate_links && review.affiliate_links.length > 0 ? (
+                  <div className={styles.affiliateGrid}>
+                    {review.affiliate_links.map(link => (
+                      <a key={link.site} href={link.url} target="_blank" rel="noopener noreferrer" className={styles.affiliateCard}>
+                        <span>{link.site}</span>
+                        <small>Buy Now →</small>
+                      </a>
+                    ))}
+                  </div>
+                ) : (
+                  <p className={styles.disclosure} style={{ marginTop: '0.5rem', color: 'var(--text-muted)' }}>
+                    International shipping links coming soon.
+                  </p>
+                )}
                 <p className={styles.disclosure}>
                   This site contains affiliate links. We may earn a commission at no extra cost to you.
                 </p>
@@ -335,12 +344,11 @@ export default async function ReviewPage({ params }) {
           </section>
         )}
 
-        {/* Comments Placeholder */}
+        {/* Questions */}
         <section className={styles.commentsSection}>
           <div className="container-narrow">
-            <h2 className={styles.sectionTitle}>Comments</h2>
-            <div className={styles.commentsBox}>
-              Comments are currently disabled. Have a question? Email us!
+            <div className={styles.commentsBox} style={{ textAlign: 'center', background: 'transparent', border: 'none' }}>
+              Have a question about this product? <a href="mailto:hello@honestkoreanreviews.com" className="accent-link">Email us</a> and we&apos;ll answer it.
             </div>
           </div>
         </section>
