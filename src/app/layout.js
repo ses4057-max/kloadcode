@@ -4,6 +4,9 @@ import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
   metadataBase: new URL('https://kloadcode.vercel.app'),
+  verification: {
+    google: 'rzx98-ahuU6MjV-TGSu9H1V6KmAWpQFjyfYSH-4Iv4c',
+  },
   title: 'Honest Korean Reviews — Real Reviews by Min & Seo',
   description: 'The only honest Korean product database written BY Koreans, FOR foreigners. Snacks, drinks, ramen, K-beauty — scored 0 to 10 with the unique Jeong Score (정).',
   keywords: 'Korean products, Korean snacks review, K-beauty review, Korean food, Korea travel, honest reviews, Jeong Score',
