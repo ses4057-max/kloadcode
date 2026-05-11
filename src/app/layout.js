@@ -3,6 +3,7 @@ import Header from '@/components/Header/Header';
 import Footer from '@/components/Footer/Footer';
 
 export const metadata = {
+  metadataBase: new URL('https://kloadcode.vercel.app'),
   title: 'Honest Korean Reviews — Real Reviews by Min & Seo',
   description: 'The only honest Korean product database written BY Koreans, FOR foreigners. Snacks, drinks, ramen, K-beauty — scored 0 to 10 with the unique Jeong Score (정).',
   keywords: 'Korean products, Korean snacks review, K-beauty review, Korean food, Korea travel, honest reviews, Jeong Score',
@@ -32,8 +33,7 @@ const websiteJsonLd = {
   },
 };
 
-// GA4 and Clarity — activate by setting env vars NEXT_PUBLIC_GA4_MEASUREMENT_ID and NEXT_PUBLIC_CLARITY_PROJECT_ID
-const GA4_ID = process.env.NEXT_PUBLIC_GA4_MEASUREMENT_ID;
+const GA4_ID = 'G-B4GGM6BW0D';
 const CLARITY_ID = process.env.NEXT_PUBLIC_CLARITY_PROJECT_ID;
 
 export default function RootLayout({ children }) {
