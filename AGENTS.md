@@ -71,6 +71,8 @@ Claude via MCP 등)가 자동으로 읽는 마스터 컨텍스트입니다.
 with both tiny hands after coming out of a public bath, while their mom 
 dried their hair with a hot air gun." (바나나우유)
 
+**단락 길이 기준**: 섹션당 2~4문장. 그 이상은 불필요. 구조(섹션 수)가 SEO를 담당하고, 단락은 짧고 읽기 편하게.
+
 ### 3. Review Type 3종
 - `childhood`: 어릴 때부터 함께 자란 제품
 - `tasted`: 직접 시식·사용한 제품
