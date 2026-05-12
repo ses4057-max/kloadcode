@@ -610,5 +610,209 @@
       "5.5 average of a genuine couple split: Min's 4.0 (marketing skeptic) vs Seo's 7.5 (convenience lover). Jeong Score of 4: too young and too corporate for real nostalgia. A product of the 1+1 era, not the childhood one."
     ],
     "image": "/images/products/toreta.jpg"
+  },
+  {
+    "id": 13,
+    "slug": "the-protein-choco",
+    "product_name": "The Protein Choco",
+    "product_name_ko": "더단백 초코",
+    "brand": "Binggrae",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 6.5,
+    "score_min": 8.0,
+    "score_seo": 5.0,
+    "one_liner": "Twenty grams of protein disguised as the chocolate milk you wanted anyway.",
+    "tags": ["Protein", "Chocolate", "Gym", "Convenience store"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-12",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: ~25, Seo: ~24",
+    "sub_scores": {
+      "taste_quality": 6.5,
+      "packaging_design": 7.0,
+      "value": 7.5,
+      "foreigner_friendliness": 6.0,
+      "repurchase_intent": 7.0
+    },
+    "jeong_score": 3,
+    "aliases": {
+      "korean_official": "더단백 초코",
+      "korean_nicknames": ["더:단백", "빙그레 단백질", "단백초코"],
+      "romanization": ["Deo Danbak Choco", "The Protein Choco", "Deo:Danbak"],
+      "english_descriptors": ["korean protein chocolate milk", "binggrae protein drink", "20g protein korean drink", "korean gym drink", "protein tetrapak korea"],
+      "common_typos": ["danbak choco", "dan-bak", "the protein choco binggrae"]
+    },
+    "how_to_spot": {
+      "color": "Dark brown and white tetrapak with bold orange branding",
+      "shape": "250ml rectangular tetrapak",
+      "size": "250ml",
+      "store_location": "Dairy/refrigerated drinks section, near flavored milks",
+      "price_range": "₩1,500 — ₩2,000",
+      "distinctive_feature": "더:단백 logo prominently displayed, '20g 단백질' highlighted on packaging"
+    },
+    "paragraphs": [
+      "The Korean gym starter pack: squat rack, protein shake, and an existential question about whether you're actually a gym person now or just someone who wandered in. The Protein Choco is what happens when Binggrae asked: what if the daily 20g didn't taste like chalk?",
+      "Binggrae's 더:단백 line packs 20g of protein into a 250ml tetrapak at 105 calories. It became the benchmark for flavored protein milk in Korean convenience stores — the drink that made gym culture accessible to people who find protein powder too serious.",
+      "Min: I've never tried other protein drinks, so I can't compare. But I've had plenty of chocolate milk, and this beats most of them. The fact that it secretly delivers 20g of protein while tasting like dessert feels illegal. 8.0.",
+      "Seo: Tastes good, but lands in that uncanny valley between protein supplement and actual chocolate milk. Satisfying enough to finish, unsatisfying enough to wonder what you're doing. Good for what it is — just not sure what it is. 5.0.",
+      "Ideal for gym-goers who want their protein without tasting it. For chocolate milk fans: adjust expectations — this is supplement territory wearing dessert clothing.",
+      "6.5 average masks a real split: Min (8.0) treats it as the best chocolate milk that happens to have protein; Seo (5.0) treats it as a protein drink that almost tastes good. Jeong Score 3: functional, recent, zero childhood weight."
+    ],
+    "image": "/images/products/the-protein-choco-1.jpg"
+  },
+  {
+    "id": 14,
+    "slug": "the-protein-melon",
+    "product_name": "The Protein Melon",
+    "product_name_ko": "더단백 멜론",
+    "brand": "Binggrae",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 4.5,
+    "score_min": 5.0,
+    "score_seo": 4.0,
+    "one_liner": "Accidentally inherited all of Melona's nostalgia. Nobody asked for this. Nobody complained either.",
+    "tags": ["Protein", "Melon", "Gym", "Convenience store"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-12",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: ~25, Seo: ~24",
+    "sub_scores": {
+      "taste_quality": 4.5,
+      "packaging_design": 7.0,
+      "value": 6.5,
+      "foreigner_friendliness": 5.0,
+      "repurchase_intent": 4.0
+    },
+    "jeong_score": 7,
+    "aliases": {
+      "korean_official": "더단백 멜론",
+      "korean_nicknames": ["더:단백 멜론", "단백 멜론", "멜로나 단백질"],
+      "romanization": ["Deo Danbak Melon", "The Protein Melon"],
+      "english_descriptors": ["korean protein melon milk", "binggrae melon protein drink", "melona protein drink", "korean gym melon drink", "melon tetrapak korea"],
+      "common_typos": ["danbak melon", "protein melon korea", "binggrae melon drink"]
+    },
+    "how_to_spot": {
+      "color": "Green and white tetrapak with bold branding",
+      "shape": "250ml rectangular tetrapak",
+      "size": "250ml",
+      "store_location": "Dairy/refrigerated drinks section, next to The Protein Choco",
+      "price_range": "₩1,500 — ₩2,000",
+      "distinctive_feature": "더:단백 logo in green colorway, melon illustration on packaging, '20g 단백질' highlighted"
+    },
+    "paragraphs": [
+      "Nobody sets out to buy a melon protein drink. The chocolate is sold out. You scan the shelf. There's a green one. You think: how bad can it be? Three sips later you realize you are drinking melted Melona ice cream — except this one has 20g of protein and costs about the same as a coffee.",
+      "The melon flavor arrived after the chocolate version proved Koreans would buy protein drinks that taste good. Same 250ml tetrapak, same 20g protein, but the flavor is unmistakably engineered to evoke Melona — Korea's most iconic melon ice cream bar.",
+      "Min: Melted Melona. That's the whole review. Melona is great. Melted Melona is its own category. I respect the engineering. I did not enjoy the result. 5.0.",
+      "Seo: Something about melon-flavored protein makes my brain resist every sip. Like dessert that keeps reminding you it's medicine. Fine, but I can't forgive the identity crisis it gave me. 4.0.",
+      "Start with the chocolate version. Come back to melon when you've fully committed to your gym-person identity. If melted Melona is genuinely your thing, this is perfect — no judgment.",
+      "4.5 average on taste, but a Jeong Score of 7 — because Melona is hardwired into Korean summer childhood, and this drink accidentally inherited all of that nostalgia. The most sentimental protein drink on the Korean market, by accident."
+    ],
+    "image": "/images/products/the-protein-melon-1.jpg"
+  },
+  {
+    "id": 15,
+    "slug": "denmark-banana-milk",
+    "product_name": "Denmark Banana Milk",
+    "product_name_ko": "덴마크 바나나 우유",
+    "brand": "Denmark",
+    "category": "drinks",
+    "price_krw": 1500,
+    "price_usd": 1.11,
+    "score": 6.3,
+    "score_min": 6.0,
+    "score_seo": 6.5,
+    "one_liner": "The banana milk you drink when the jar-shaped one is gone. Respectable. Never first choice.",
+    "tags": ["Banana", "Milk", "Convenience store", "Sweet"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-12",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: ~20, Seo: ~18",
+    "sub_scores": {
+      "taste_quality": 6.5,
+      "packaging_design": 5.5,
+      "value": 7.0,
+      "foreigner_friendliness": 7.5,
+      "repurchase_intent": 6.0
+    },
+    "jeong_score": 5,
+    "aliases": {
+      "korean_official": "덴마크 바나나 우유",
+      "korean_nicknames": ["덴마크 바나나", "덴마크 우유"],
+      "romanization": ["Denmark Banana Milk", "Denmark Banana Woo Yu"],
+      "english_descriptors": ["korean banana milk carton", "denmark banana milk korea", "non-binggrae banana milk", "banana milk alternative korea"],
+      "common_typos": ["denmark banana wooyu", "denmark bananamilk"]
+    },
+    "how_to_spot": {
+      "color": "Yellow and white carton with banana imagery",
+      "shape": "Standard rectangular milk carton",
+      "size": "240ml",
+      "store_location": "Dairy/refrigerated drinks section, near other flavored milks",
+      "price_range": "₩1,400 — ₩1,800",
+      "distinctive_feature": "Denmark brand name prominently displayed; rectangular carton rather than Binggrae's iconic jar shape"
+    },
+    "paragraphs": [
+      "Every Korean has already settled their banana milk allegiance, and Binggrae won before Denmark entered the game. Denmark Banana Milk is the reliable second option — the one you reach for when the iconic jar-shaped one is sold out, and the one you finish faster than expected.",
+      "Denmark brand banana milk comes in a standard rectangular carton rather than Binggrae's famous clay-pot shape. Similar sweetened banana-flavored milk, available at most Korean convenience stores as the non-Binggrae alternative.",
+      "Min: Not Binggrae. Made peace with that on the first sip. As its own thing, it's competent — sweet, smooth, drinkable. I don't seek it out, but I don't regret it when it's the only option. 6.0.",
+      "Seo: The jar shape of Binggrae isn't just branding — it genuinely changes the drinking experience. Denmark tastes fine, but the carton works against it. Pour it into a cup and the gap narrows significantly. 6.5.",
+      "Solid choice when Binggrae is unavailable. For direct comparison, Binggrae wins the full experience. On taste alone, Denmark holds its own — good for travelers who want banana milk without hunting for the iconic jar.",
+      "6.3 average — competent and consistent. Jeong Score of 5: around long enough to earn some loyalty, not long enough to replace the original in anyone's memory. The banana milk you respect but don't miss."
+    ],
+    "image": "/images/products/denmark-banana-milk-1.jpg"
+  },
+  {
+    "id": 16,
+    "slug": "sunhari-lemon",
+    "product_name": "Sunhari Lemon",
+    "product_name_ko": "순하리 레몬",
+    "brand": "Lotte Chilsung",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 7.0,
+    "score_min": 9.0,
+    "score_seo": 5.0,
+    "one_liner": "Lemonade with a quiet agenda. Min noticed. Rated it 9 anyway.",
+    "tags": ["Alcoholic", "Lemon", "Zero sugar", "Convenience store"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-12",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: ~22, Seo: ~22",
+    "sub_scores": {
+      "taste_quality": 7.0,
+      "packaging_design": 7.0,
+      "value": 7.5,
+      "foreigner_friendliness": 8.0,
+      "repurchase_intent": 7.5
+    },
+    "jeong_score": 3,
+    "aliases": {
+      "korean_official": "순하리 레몬",
+      "korean_nicknames": ["순하리", "레몬 순하리", "롯데 순하리"],
+      "romanization": ["Sunhari Lemon", "Soonhari Lemon", "Sunhwari Lemon"],
+      "english_descriptors": ["korean lemon alcohol drink", "lotte lemon beer", "korean fruit soju lemon", "low alcohol lemon drink korea", "korean strong zero alternative"],
+      "common_typos": ["soonhari", "sunhwari lemon", "sunhari lemmon"]
+    },
+    "how_to_spot": {
+      "color": "White can with bright yellow lemon graphics",
+      "shape": "Standard 355ml slim can",
+      "size": "355ml",
+      "store_location": "Refrigerated alcohol section at convenience stores, near beer and soju",
+      "price_range": "₩1,500 — ₩2,000",
+      "distinctive_feature": "순하리 branding in large text, lemon slice imagery, zero sugar badge on can"
+    },
+    "paragraphs": [
+      "Korea has a specific product niche: things that don't feel like alcohol until they already are. 순하리 레몬 is lemonade with a quiet agenda — light, citrusy, and designed to lower your guard before the 4.5% ABV quietly does its job. Same psychological lane as Japan's Strong Zero, friendlier execution.",
+      "순하리 레몬 is a low-alcohol lemon-flavored drink by 롯데칠성음료, 4.5% ABV, zero sugar, 355ml can. It sits between a soju cooler and a lemon beer — sweeter than beer, lighter than soju, specifically designed for people who find both too intense.",
+      "Min: I know exactly what this drink is doing. It's lemonade wearing an alibi. I reviewed my behavioral patterns and made a conscious decision: I don't care. Best thing in the category. 9.0.",
+      "Seo: Pleasant, but it never committed to an identity. Too fruity for a real beer pairing, too mild for a cocktail mood. Exists between two lanes without owning either. I wanted it to pick a side. 5.0.",
+      "Perfect for outdoor convenience store runs, summer picnics, or that group dinner where half the table wants beer and the other half wants something lighter. Don't pair with serious food — this is a standalone situation.",
+      "7.0 average with a 4-point Min/Seo gap — straight into Polarizing Picks territory. Min (9.0) loves the 'tastes-like-lemonade, hits-like-alcohol' formula; Seo (5.0) wanted more identity. Jeong Score 3: too recent, too niche, no shared memory yet."
+    ],
+    "image": "/images/products/sunhari-lemon-1.jpg"
   }
 ]
