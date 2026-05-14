@@ -814,5 +814,158 @@
       "7.0 average with a 4-point Min/Seo gap — straight into Polarizing Picks territory. Min (9.0) loves the 'tastes-like-lemonade, hits-like-alcohol' formula; Seo (5.0) wanted more identity. Jeong Score 3: too recent, too niche, no shared memory yet."
     ],
     "image": "/images/products/sunhari-lemon-1.jpg"
+  },
+  {
+    "id": 17,
+    "slug": "yachae-nongjang",
+    "product_name": "Vegetable Farm",
+    "product_name_ko": "야채농장",
+    "brand": "Pasteur",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 7.5,
+    "score_min": 8.0,
+    "score_seo": 7.0,
+    "one_liner": "The vegetable juice you hated at age seven. You owe it an apology.",
+    "tags": ["Vegetable", "Juice", "Healthy", "Convenience store"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-14",
+    "review_type": "childhood",
+    "first_tasted_age": "Min: childhood, Seo: childhood",
+    "sub_scores": {
+      "taste_quality": 7.5,
+      "packaging_design": 6.5,
+      "value": 7.0,
+      "foreigner_friendliness": 6.5,
+      "repurchase_intent": 7.5
+    },
+    "jeong_score": 7,
+    "aliases": {
+      "korean_official": "야채농장",
+      "korean_nicknames": ["파스퇴르 야채농장", "야채 주스", "채소 주스"],
+      "romanization": ["Yachae Nongjang", "Vegetable Farm Juice"],
+      "english_descriptors": ["korean vegetable juice", "pasteur vegetable drink", "korean veggie smoothie", "mixed vegetable juice korea"],
+      "common_typos": ["yachae nongjang", "yachae farm", "vegetable farm korea"]
+    },
+    "how_to_spot": {
+      "color": "Green and orange packaging with vegetable imagery",
+      "shape": "Small ~200ml bottle or tetrapak",
+      "size": "200ml",
+      "store_location": "Refrigerated juice/dairy section at convenience stores and supermarkets",
+      "price_range": "₩1,500 — ₩2,000",
+      "distinctive_feature": "야채농장 logo with farm/vegetable graphics, Pasteur brand name"
+    },
+    "paragraphs": [
+      "There is a specific childhood reaction that Koreans over a certain age share: the first sip of 야채농장, the immediate face, and the firm declaration that vegetables should not be in a bottle. Min had this reaction. Then adulthood happened, taste buds evolved, and the drink that once tasted like punishment became surprisingly good.",
+      "파스퇴르 야채농장 is a mixed vegetable juice in a small 200ml bottle, around 100 calories, with a texture that lands closer to a creamy vegetable blend than a cold-pressed green juice. The base has a mild sweetness from carrots that softens the whole thing — not the aggressive health drink it looks like.",
+      "Min: I tried this as a kid and immediately decided vegetables in liquid form were a mistake. Then I had it again as an adult and I owe 야채농장 an apology. The creamy texture, the mild flavour, the way it actually tastes good — I did not see this coming. 8.0.",
+      "Seo: The gentle carrot sweetness works better than expected. It doesn't taste 'healthy' in the punishing way — it tastes healthy in the way that makes you feel like you're making good decisions with your morning. Whether those decisions are biochemically significant is a separate conversation. 7.0.",
+      "Worth trying even if your childhood self rejected it — this is a redemption arc drink. Best cold, works well as a morning routine addition, and genuinely useful for vegetable-averse travelers who still want to feel like they're doing something right.",
+      "7.5 average from two people who returned to this with fresh eyes and different results than expected. Jeong Score 7: not the universal nostalgia of 바나나우유, but a specific shared childhood memory of rejection followed, decades later, by a quiet reconsideration."
+    ],
+    "image": "/images/products/야채농장.jpg"
+  },
+  {
+    "id": 18,
+    "slug": "heotgae-tea",
+    "product_name": "Hovenia Tea",
+    "product_name_ko": "헛개차",
+    "brand": "Kwangdong",
+    "category": "drinks",
+    "price_krw": 1300,
+    "price_usd": 0.96,
+    "score": 5.0,
+    "score_min": 3.0,
+    "score_seo": 7.0,
+    "one_liner": "Korea's official morning-after drink. Whether it actually works is still being debated.",
+    "tags": ["Hangover", "Herbal tea", "Zero calorie", "Convenience store"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven", "E-mart"],
+    "reviewed_date": "2026-05-14",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: ~22, Seo: ~22",
+    "sub_scores": {
+      "taste_quality": 5.0,
+      "packaging_design": 6.5,
+      "value": 7.5,
+      "foreigner_friendliness": 7.0,
+      "repurchase_intent": 6.0
+    },
+    "jeong_score": 7,
+    "aliases": {
+      "korean_official": "광동 헛개차",
+      "korean_nicknames": ["헛개차", "숙취해소차", "헛개"],
+      "romanization": ["Heotgae Tea", "Hovenia Tea", "Kwangdong Heotgae"],
+      "english_descriptors": ["korean hangover tea", "hovenia tea korea", "kwangdong tea", "korean morning after drink", "korean liver tea", "hangover cure korea"],
+      "common_typos": ["heotgae", "hotgae tea", "kwangdong hovenia", "hotgae"]
+    },
+    "how_to_spot": {
+      "color": "Brown and gold can with traditional Korean design elements",
+      "shape": "Standard 340ml can",
+      "size": "340ml",
+      "store_location": "Room temperature or refrigerated beverage section at convenience stores",
+      "price_range": "₩1,200 — ₩1,500",
+      "distinctive_feature": "광동 brand logo, 헛개차 in bold Korean characters, warm earthy brown color scheme"
+    },
+    "paragraphs": [
+      "Korean drinking culture has a very specific morning-after ritual: hydrate with something that feels medicinal, tastes like tea, and convinces your body that help is on the way. 헛개차 is the official drink of Korean post-drinking optimism — whether or not the optimism is biochemically justified is a question the Korean office worker has collectively decided not to investigate.",
+      "광동 헛개차 is made from the Hovenia dulcis tree, long used in Korean traditional medicine for liver support. 340ml can, essentially zero calories, roasted and nutty in flavour. The hangover-beverage category in Korea is a billion-won industry, and 헛개차 has been the anchor product for decades.",
+      "Min: Hydrated water with ambitions. I've drunk 헛개차 after long nights and I cannot say with confidence it does anything beyond replacing the water I lost. The taste is mild. The healing is theoretical. 3.0.",
+      "Seo: For people who struggle to drink plain water — and there are more of us than you'd think — this is genuinely useful. It's roasted, slightly nutty, very drinkable, and delivers the psychological comfort of active recovery. Whether it's the hovenia or just the hydration doing the work, the feeling counts. 7.0.",
+      "Buy it the night before and leave it next to your bed — that's the Korean way. Even if the science is debatable, the ritual is real. Also perfectly good as an everyday tea for people who find plain water boring.",
+      "5.0 average with a 4-point Min/Seo gap — straight into Polarizing Picks. Min (3.0) is a full skeptic; Seo (7.0) is a true believer. Jeong Score 7: 헛개차 has been the morning-after companion for Korean adults for decades. In Korea, hangover recovery and 헛개차 are the same noun."
+    ],
+    "image": "/images/products/헛개차.jpg"
+  },
+  {
+    "id": 19,
+    "slug": "tingle-lemon-acv-soda",
+    "product_name": "Tingle Lemon Apple Cider Vinegar Soda",
+    "product_name_ko": "팅글 레몬 애사비 소다",
+    "brand": "Tingle",
+    "category": "drinks",
+    "price_krw": 1800,
+    "price_usd": 1.33,
+    "score": 6.8,
+    "score_min": 7.0,
+    "score_seo": 6.5,
+    "one_liner": "Apple cider vinegar convinced everyone it belongs in a soda can. Somehow it does.",
+    "tags": ["Apple cider vinegar", "Lemon", "Sparkling", "Trendy", "Convenience store"],
+    "where_to_buy_kr": ["CU", "GS25", "Emart24", "7-Eleven"],
+    "reviewed_date": "2026-05-14",
+    "review_type": "tasted",
+    "first_tasted_age": "Min: recent (2025), Seo: recent (2025)",
+    "sub_scores": {
+      "taste_quality": 7.0,
+      "packaging_design": 7.0,
+      "value": 6.5,
+      "foreigner_friendliness": 7.5,
+      "repurchase_intent": 6.5
+    },
+    "jeong_score": 2,
+    "aliases": {
+      "korean_official": "팅글 레몬 애사비 소다",
+      "korean_nicknames": ["팅글에사비", "애사비 소다", "레몬 식초 소다"],
+      "romanization": ["Tingle Lemon ACV Soda", "Tingle Aesabi Soda"],
+      "english_descriptors": ["korean apple cider vinegar soda", "lemon acv drink korea", "tingle lemon soda", "korean vinegar drink", "korean wellness soda", "apple cider vinegar sparkling korea"],
+      "common_typos": ["tingle esabi", "tingle aesabi", "tingle lemon vinegar"]
+    },
+    "how_to_spot": {
+      "color": "Bright yellow and white with citrus and lemon imagery",
+      "shape": "Slim can or bottle",
+      "size": "~250-350ml",
+      "store_location": "Refrigerated drinks section, near sparkling water and zero-sugar beverages",
+      "price_range": "₩1,500 — ₩2,000",
+      "distinctive_feature": "Tingle branding with prominent lemon graphics, ACV/식초 (vinegar) label visible on packaging"
+    },
+    "paragraphs": [
+      "2024 was the year Korean convenience stores decided apple cider vinegar deserved a rebrand. Out went the health supplement framing; in came fizzy cans with 'tingle' in the name and enough lemon to convince you this is just a normal soda that happens to contain vinegar. The wellness drink disguised as a treat. And honestly — it worked.",
+      "Tingle Lemon Apple Cider Vinegar Soda is a lightly carbonated drink riding the 2024 Korean wellness-drink-as-fun-drink trend. Apple cider vinegar base with a lemon and citrus profile, minimal vinegar sharpness, and carbonation so gentle it borders on still. A short-window trend product that turned out to be genuinely drinkable.",
+      "Min: The sour lemon punch is forward, but the vinegar funk stays in the background where it belongs. This is what trendy tastes like when it actually works — the lemon pulls you in, the cider vinegar adds depth without punishment. Worth trying while the trend still has legs. 7.0.",
+      "Seo: The vinegar flavour doesn't dominate, which is the entire achievement. The carbonation is so subtle it almost disappears — more of a gentle tingle than a proper soda, which is apt. Orange-citrus base is pleasant and easy. It's a good drink that just doesn't fully commit to being a soda. 6.5.",
+      "Try it if you spot it — this trend window probably won't stay open long. Best with ice. Perfect for anyone curious about the apple cider vinegar wellness trend but not ready to drink it straight from the bottle.",
+      "6.75 average from two people who came in skeptical and left quietly impressed. Jeong Score 2: arrived in 2024, hasn't earned its place in the permanent Korean beverage canon yet. Check back in five years — if it's still here, it earned it."
+    ],
+    "image": "/images/products/팅글에사비.jpg"
   }
 ]
