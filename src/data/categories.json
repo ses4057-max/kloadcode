@@ -3,36 +3,42 @@
     "slug": "drinks",
     "name": "Drinks",
     "icon": "🥤",
+    "color": "#1565C0",
     "description": "Milk, sodas, and teas from the cold fridge."
   },
   {
     "slug": "snacks",
     "name": "Snacks",
     "icon": "🍪",
+    "color": "#E65100",
     "description": "Chips, sweets, and childhood favorites."
   },
   {
     "slug": "ramen",
     "name": "Ramen & Instant",
     "icon": "🍜",
+    "color": "#B71C1C",
     "description": "Spicy, savory, and quick noodles."
   },
   {
     "slug": "convenience",
     "name": "Convenience Store New",
     "icon": "🏪",
+    "color": "#4A148C",
     "description": "Experimental finds from CU, GS25, and more."
   },
   {
     "slug": "kpop",
     "name": "K-Pop & K-Drama",
     "icon": "🎵",
+    "color": "#880E4F",
     "description": "Merch and products seen on screen."
   },
   {
     "slug": "kbeauty",
     "name": "K-Beauty",
     "icon": "✨",
+    "color": "#AD1457",
     "description": "Skincare and makeup we actually use."
   }
 ]
